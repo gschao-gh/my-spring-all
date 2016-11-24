@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="spr-dtl-application:war exploded">
+    <output-path>$PROJECT_DIR$/spr-dtl-application/target/spr-dtl-application</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="spr-dtl-application" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/spr-dtl-application/target/spr-dtl-application/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="spr-dtl-application/web/Web" />
+    </root>
+  </artifact>
+</component>

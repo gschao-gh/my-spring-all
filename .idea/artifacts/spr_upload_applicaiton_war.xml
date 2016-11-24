@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="spr-upload-applicaiton:war">
+    <output-path>$PROJECT_DIR$/spr-upload-applicaiton/target</output-path>
+    <root id="archive" name="spr-upload-application.war">
+      <element id="artifact" artifact-name="spr-upload-applicaiton:war exploded" />
+    </root>
+  </artifact>
+</component>
