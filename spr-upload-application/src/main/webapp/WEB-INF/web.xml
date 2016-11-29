@@ -1,7 +1,38 @@
 <!DOCTYPE web-app PUBLIC
  "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<!--框架是一种结构化软件-->
+<!--框架尽可能将特定领域的日常任务和具体问题的处理流程抽象化，然后提供一平台，基于这个平台可以更快速得构建web程序-->
+<!--1.尽量自动化web开发中的常见问题-->
+<!--2.尽量提供优秀的架构解决方案来优化web应用程序中常见的工作流-->
+<!--mvc有三个关注点：模型、视图和控制器，struts中动作(action)、结果(result)和过滤分配器(FilterDispatcher)-->
+<!--struts2默认查找以.action结尾的URL-->
+
 
 <web-app>
+
+
   <display-name>Archetype Created Web Application</display-name>
+
+
+  <!--struts2配置 start-->
+  <!--org.apache.struts2.dispatcher.FilterDispatcher已过时，官方标准配置-->
+  <filter>
+    <filter-name>struts2</filter-name>
+    <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>struts2</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <!--struts2配置 end-->
+
+  <!--设置首页-->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
 </web-app>
+
+
