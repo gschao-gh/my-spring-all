@@ -14,5 +14,6 @@
         </action>
 
     </package>
+    <include file="struts-test.xml"></include>
 
 </struts>
