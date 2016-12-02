@@ -5,7 +5,12 @@
 <html>
 <body>
     <h1>Welcome To Struts 2!</h1>
+
     <p><a href="<s:url action='hello'/>">Hello World</a></p>
+
+    <p><a href="produce.action">Produce JSON</a></p>
+    <p><a href="consume.html">Consume JSON</a></p>
+
     <s:form action="helloUser">
         <s:textfield name="userName" label="Your name" />
         <s:submit value="Submit" />
