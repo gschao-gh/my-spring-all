@@ -10,6 +10,9 @@
         <action name="hello" class="com.spr.upload.struts.action.HelloWorldAction" method="execute">
             <result name="success">/helloworld.jsp</result>
         </action>
+        <action name="helloUser" class="com.spr.upload.struts.action.UserNameAction" method="execute">
+            <result name="success">/helloworld.jsp</result>
+        </action>
     </package>
 
 </struts>
