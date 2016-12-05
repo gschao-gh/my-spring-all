@@ -1,6 +1,7 @@
 package com.spr.upload.struts.action;
 
 import com.opensymphony.xwork2.ActionSupport;
+import com.spr.upload.base.BaseAction;
 import com.spr.upload.struts.model.MyJsonBean;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -13,7 +14,7 @@ import java.util.Arrays;
  * @date 2016/12/2 14:17.
  * 产品jsonAction
  */
-public class ProductJsonAction extends ActionSupport {
+public class ProductJsonAction extends BaseAction {
     private Logger logger = LogManager.getLogger(ProductJsonAction.class);
 
     private MyJsonBean bean;
@@ -22,6 +23,9 @@ public class ProductJsonAction extends ActionSupport {
     public String execute() throws Exception {
         bean = new MyJsonBean(2, Arrays.asList("ZhangMing","LiXiaoRan"));
         logger.info("bean:"+bean.getNames());
+        logger.info(ProductJsonAction.class.getResource("").getPath());
+        logger.info(getSavePath());
+        logger.info("servletPath:"+servletContext.getContextPath());
         return SUCCESS;
     }
 
