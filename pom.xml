@@ -51,6 +51,13 @@
       </dependency>
 
 
+      <dependency>
+        <groupId>com.eloancn.common</groupId>
+        <artifactId>queue</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+
+
       <!-- Import dependency management from Spring Boot -->
       <dependency>
         <groupId>junit</groupId>
