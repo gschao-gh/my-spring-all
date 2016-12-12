@@ -11,15 +11,18 @@
     <name>spr-upload-application</name>
     <dependencies>
 
+        <!--struts2框架start-->
         <dependency>
             <groupId>org.apache.struts</groupId>
             <artifactId>struts2-core</artifactId>
         </dependency>
 
+        <!--json插件支持-->
         <dependency>
             <groupId>org.apache.struts</groupId>
             <artifactId>struts2-json-plugin</artifactId>
         </dependency>
+        <!--struts2框架end-->
 
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -27,6 +30,7 @@
             <scope>provided</scope>
         </dependency>
 
+        <!--log4j2依赖添加start-->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
@@ -36,18 +40,13 @@
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
         </dependency>
-
+        <!--log4j2依赖添加end-->
 
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>com.eloancn.common</groupId>
-            <artifactId>queue</artifactId>
-        </dependency>
-
 
     </dependencies>
     <build>
