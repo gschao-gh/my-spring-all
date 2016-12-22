@@ -21,8 +21,15 @@ public class ImageUploadAction extends BaseAction {
 
     public String upload(){
         logger.info(UploadException.AUTHOR_EXCEPTION);
+        String savePath = getSavePath()+"/upload";
+
+
+
+
         return SUCCESS;
     }
+
+
 
 
 
