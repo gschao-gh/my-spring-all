@@ -1,0 +1,1860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="agreement" language="groovy" pageWidth="1300" pageHeight="100000" columnWidth="1260" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="3f4927a9-c075-4357-96ae-f4e0fa586a99">
+	<property name="ireport.zoom" value="0.7513148009015915"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="6765"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="ca9c2026-07dc-4589-b9f5-af562cf355de">
+		<field name="lenderAccountNum" class="java.lang.String"/>
+		<field name="lenderRealname" class="java.lang.String"/>
+		<field name="lenderIdcard" class="java.lang.String"/>
+		<field name="lenderAmount" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="Table Dataset 2" uuid="60763bc4-c666-4296-ac2b-3b0f99708af0">
+		<field name="repayDate" class="java.lang.String"/>
+		<field name="repayCapital" class="java.lang.String"/>
+		<field name="repayInterest" class="java.lang.String"/>
+		<field name="replayServicefee" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="Table Dataset 3" uuid="61994c92-e242-4f0f-9da7-975adbe3e3ac">
+		<parameter name="lockEndTime" class="java.lang.String"/>
+		<field name="transferFeeExeTime" class="java.lang.String"/>
+		<field name="transferRate" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="contractNO" class="java.lang.String"/>
+	<parameter name="realname" class="java.lang.String"/>
+	<parameter name="idcard" class="java.lang.String"/>
+	<parameter name="address" class="java.lang.String"/>
+	<parameter name="mobile" class="java.lang.String"/>
+	<parameter name="aAccountNum" class="java.lang.String"/>
+	<parameter name="bRealName" class="java.lang.String"/>
+	<parameter name="bIdCard" class="java.lang.String"/>
+	<parameter name="bAccountNum" class="java.lang.String"/>
+	<parameter name="cRealName" class="java.lang.String"/>
+	<parameter name="cIdCard" class="java.lang.String"/>
+	<parameter name="cAccountNum" class="java.lang.String"/>
+	<parameter name="eloancnAdd" class="java.lang.String"/>
+	<parameter name="title" class="java.lang.String"/>
+	<parameter name="smallAmount" class="java.lang.String"/>
+	<parameter name="upAmount" class="java.lang.String"/>
+	<parameter name="startInterestDate" class="java.lang.String"/>
+	<parameter name="endInterestDate" class="java.lang.String"/>
+	<parameter name="repaymenttype" class="java.lang.String"/>
+	<parameter name="partyA" class="java.lang.String"/>
+	<parameter name="partyB" class="java.lang.String"/>
+	<parameter name="flowNum" class="java.lang.String"/>
+	<parameter name="dbIdcard" class="java.lang.String"/>
+	<parameter name="insuranceAmount" class="java.lang.String"/>
+	<parameter name="insuranceRate" class="java.lang.String"/>
+	<parameter name="insuranceFee" class="java.lang.String"/>
+	<field name="table_01" class="net.sf.jasperreports.engine.data.JRMapCollectionDataSource"/>
+	<field name="table_02" class="net.sf.jasperreports.engine.data.JRMapCollectionDataSource"/>
+	<field name="table_03" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="316" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="1261" height="42" uuid="0ff9f618-09a3-435a-afcd-604801afaa14"/>
+				<textElement textAlignment="Center">
+					<font fontName="宋体" size="20" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[网络借贷协议]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="41" width="997" height="38" uuid="95fae237-5836-4867-854b-3b8f947d455c"/>
+				<textElement textAlignment="Right">
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[合同编号：【]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="997" y="41" width="226" height="38" uuid="5e17ffe5-4776-490c-aea4-819c5ea915cc"/>
+				<textElement textAlignment="Center">
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{contractNO}==null?"":$P{contractNO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="78" width="997" height="38" uuid="3d61284a-0bc7-4c20-b0aa-bc1b683ce025"/>
+				<textElement textAlignment="Right">
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[借款标流水号：【]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="997" y="78" width="226" height="38" uuid="4571bb14-3b5f-4ddc-91dc-80b5bfc87e01"/>
+				<textElement textAlignment="Center">
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{flowNum}==null?"":$P{flowNum}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1222" y="78" width="37" height="38" uuid="be532e06-b5a8-4c45-9faa-e6f4b7c7be5c"/>
+				<textElement>
+					<font fontName="宋体" size="18"/>
+				</textElement>
+				<text><![CDATA[】]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1223" y="41" width="37" height="38" uuid="b95dc470-497b-4fd6-93d9-f9dbe51e3602"/>
+				<textElement>
+					<font fontName="宋体" size="18"/>
+				</textElement>
+				<text><![CDATA[】]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="115" width="1260" height="50" uuid="f52fe05f-f954-43c6-9e81-713f433ca152"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[出借人（甲方）：]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement key="table" style="table" x="0" y="165" width="1260" height="150" uuid="8ff364b8-87d5-434f-ada9-fc74be7784c9"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Table Dataset 1" uuid="72d6103e-cf57-4829-9236-aa1f4cd4c5ba">
+						<dataSourceExpression><![CDATA[$F{table_01}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="207" uuid="7de73f64-2300-457a-953a-d11fdf67aebf">
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="207" height="30" uuid="4206c801-c95c-4e27-ba03-947d8ea534aa"/>
+								<textElement textAlignment="Center" verticalAlignment="Top">
+									<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[账户编号]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell height="30" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="207" height="30" uuid="bf3d2a42-d3b1-42f5-b3cd-eb82bc787686"/>
+								<textElement>
+									<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{lenderAccountNum}==null?"":$F{lenderAccountNum}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="273" uuid="7d237a3e-3dab-47a0-b029-ce094372f324">
+						<jr:columnHeader style="table_TD" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="273" height="30" uuid="71f0c916-c4f3-4013-8653-cb2a7defe453"/>
+								<textElement textAlignment="Center" verticalAlignment="Top">
+									<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[出借人姓名]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="30" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="273" height="30" uuid="03be145b-ce97-48fc-8b22-339185ff0055"/>
+								<textElement textAlignment="Center">
+									<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{lenderRealname}==null?"":$F{lenderRealname}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="460" uuid="ba3650ca-28d3-49aa-9a63-d461059f28c7">
+						<jr:columnHeader style="table_TD" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="460" height="30" backcolor="#66FF66" uuid="44637113-8128-45ba-906b-4191a2dc1219"/>
+								<textElement textAlignment="Center" verticalAlignment="Top">
+									<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[身份证号码]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="30" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="460" height="30" uuid="fb3ca28d-a51a-4ba4-ba25-7bf40d846d79"/>
+								<textElement textAlignment="Center">
+									<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{lenderIdcard}==null?"":$F{lenderIdcard}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="397" uuid="82291697-94fd-40cc-94eb-74ffedb1ccee">
+						<jr:columnHeader style="table_TD" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="396" height="30" uuid="a727aadc-5713-4947-a23a-c87aa9b2cc4b"/>
+								<textElement textAlignment="Center" verticalAlignment="Top">
+									<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[出借金额（元）]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="30" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="396" height="30" uuid="1cbc1fbf-305a-4ae7-ba66-0bb1738c5e99"/>
+								<textElement textAlignment="Center">
+									<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{lenderAmount}==null?"":$F{lenderAmount}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="995" splitType="Stretch">
+			<staticText>
+				<reportElement x="-1" y="0" width="1261" height="35" uuid="27ca59c4-5402-47ec-a0a4-ef6d6ac1b502"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[借款人（乙方）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-2" y="34" width="167" height="35" uuid="57f01708-7371-4b3c-ac09-a0daf6530c85"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="18"/>
+				</textElement>
+				<text><![CDATA[借款人姓名:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="165" y="34" width="344" height="35" uuid="d666a57c-555c-41df-9225-17b84ea35b77"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realname}==null?"":$P{realname}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="509" y="34" width="398" height="35" uuid="cb86433e-efa0-40dc-95ad-7145858c4b56"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="18"/>
+				</textElement>
+				<text><![CDATA[借款人身份证号码/统一社会信用代码:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="906" y="34" width="353" height="35" uuid="162da297-9458-4343-81bf-1fcf6a5ef496"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{idcard}==null?"":$P{idcard}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-2" y="68" width="167" height="35" uuid="65a61d04-c86f-4b9c-a49c-fe4cef65ab48"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[借款人住址:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="165" y="68" width="538" height="35" uuid="f27b2bb3-b507-4071-a44b-952fcbd3c878"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{address}==null?"":$P{address}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="703" y="68" width="204" height="35" uuid="89acfbf0-9e9a-456e-8d94-39942a3c88d8"/>
+				<textElement textAlignment="Right">
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[联系方式：]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="906" y="68" width="355" height="35" uuid="4b338e5f-44c0-4938-ad0e-e5b40a3521bb"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mobile}==null?"":$P{mobile}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="102" width="165" height="35" uuid="c520013f-e1c0-4239-91ad-05f91538c64a"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[账户编号:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="166" y="102" width="1094" height="35" uuid="79897c87-20eb-4b02-ac1e-fe28d68b92b0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{aAccountNum}==null?"":$P{aAccountNum}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="137" width="1261" height="35" uuid="6211000f-7cfd-43b9-89d3-e0c7df21b15e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[共同借款人（乙方）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="171" width="167" height="35" uuid="a162307a-64c0-489f-b845-d87c83b44bdb"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="18"/>
+				</textElement>
+				<text><![CDATA[借款人名称:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="166" y="171" width="341" height="35" uuid="a696e136-c721-471d-9f6b-aa553f755cf7"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{bRealName}==null?"":$P{bRealName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="507" y="171" width="398" height="35" uuid="e10bc262-4afd-4538-a530-bb157a3b10f2"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="18"/>
+				</textElement>
+				<text><![CDATA[借款人身份证号码/统一社会信用代码:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="905" y="171" width="354" height="35" uuid="d8285feb-295d-4e03-bd53-6953b8372731"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{bIdCard}==null?"":$P{bIdCard}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="205" width="167" height="35" uuid="23f8d08c-a2aa-4949-a8fc-b028f8af3692"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[账户编号:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="166" y="205" width="1093" height="35" uuid="9b12981a-164a-4f89-893a-66634978466a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{bAccountNum}==null?"":$P{bAccountNum}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="239" width="1261" height="35" uuid="418d1515-5f56-48da-bc11-c558b63b39c9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[担保人（丙方）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="274" width="167" height="35" uuid="7dc8b7c2-6574-4b9f-b852-d9b8fa55153f"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="18"/>
+				</textElement>
+				<text><![CDATA[担保人名称：]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="166" y="274" width="341" height="35" uuid="bc9b4c6c-ace0-45a0-8a91-d58bf53dd0a0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cRealName}==null?"":$P{cRealName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="507" y="274" width="398" height="35" uuid="55af4ed7-0d84-46e3-87f1-4d42506c95c0"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="18"/>
+				</textElement>
+				<text><![CDATA[借款人身份证号码/统一社会信用代码:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="905" y="274" width="354" height="35" uuid="63507ab6-411e-4038-b907-34148354d6ad"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cIdCard}==null?"":$P{cIdCard}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="308" width="167" height="35" uuid="d4440364-c087-4477-bf45-18c38f7d1363"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[账户编号:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="166" y="308" width="1093" height="35" uuid="0aa9840d-04c0-4247-9e5e-52fd0eb5ff2b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cAccountNum}==null?"":$P{cAccountNum}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-1" y="342" width="1261" height="35" uuid="dd52026c-51fd-46d1-b7e8-bfa59e3c3828"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[服务方(丁方)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="376" width="1261" height="35" uuid="f63b4b52-fba9-44b3-93f0-be378938bc7b"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[服务方名称:北京同城翼龙网络科技有限公司]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="410" width="53" height="35" uuid="626e4408-236b-4480-b00b-42db06909a1e"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[住所: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="53" y="410" width="1208" height="35" uuid="34bc55f6-01db-476b-83ba-deb0032ba76c"/>
+				<textElement>
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{eloancnAdd}==null?"":$P{eloancnAdd}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="444" width="1261" height="136" uuid="cef453b8-c966-47be-a8ce-f38848f9191f"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[鉴于：
+1、	丁方通过运营翼龙贷网（www.eloancn.com或www.yilongdai.com）（以下简称平台），为甲、乙双方提供金融信息撮合及相关服务。
+2、	甲方和乙方同意成立借贷关系，丙方同意就本协议项下借款提供担保。
+3、	甲方、乙方系平台注册用户，同意遵守平台各项规则。
+现各方根据平等、自愿的原则，达成本协议如下：
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="579" width="1261" height="60" uuid="f18f767b-d9ab-4de9-a3ce-29efae4712c2"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[一、借款
+1.1.借款基本信息表]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="0" y="640" width="173" height="35" uuid="20a702ae-1870-41c1-9e67-4deefd6022ac"/>
+				<box leftPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[借款用途]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="675" width="173" height="35" uuid="7741d295-6aa1-469f-b08a-eddfa1d5215d"/>
+				<box leftPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[借款金额]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="675" width="98" height="35" uuid="9d2a0d06-1f16-403e-8e47-dfdf639bc27c"/>
+				<box leftPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[小写：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="710" width="173" height="35" uuid="7c022aff-6ca4-4071-9eba-70296cb5a6bd"/>
+				<box leftPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[起息日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="745" width="173" height="35" uuid="9b6c88de-4c37-4eda-82e2-b25af9c482af"/>
+				<box leftPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[到期日]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="271" y="675" width="293" height="35" uuid="393d16ed-15e7-4b05-8b15-7dea3910bce5"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="宋体" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{smallAmount}==null?"":$P{smallAmount}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="173" y="640" width="1086" height="35" uuid="2861cbf5-7538-4b23-8f35-8eb3a15526ba"/>
+				<box leftPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{title}==null?"":$P{title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="672" y="675" width="587" height="35" uuid="821abb57-0cad-4cd0-8c9a-8ed1fb60f11d"/>
+				<box leftPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{upAmount}==null?"":$P{upAmount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="173" y="710" width="1086" height="35" uuid="0f1cac30-87cd-40ed-8977-c6f74c87b3c8"/>
+				<box leftPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{startInterestDate}==null?"":$P{startInterestDate}]]></textFieldExpression>
+			</textField>
+			<textField pattern="">
+				<reportElement x="173" y="745" width="1086" height="35" uuid="4635c999-3476-4b17-b974-10e6124cea40"/>
+				<box leftPadding="3">
+					<pen lineWidth="1.0" lineStyle="Dotted"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<leftPen lineWidth="0.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Dotted"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{endInterestDate}==null?"":$P{endInterestDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="781" width="1261" height="61" uuid="5a13effe-a8e5-4dce-b483-5b78b76eaf15"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[1.2丁方委托其合作的第三方支付机构或存管银行将甲方出借资金全部划付至乙方的资金账户（指乙方在翼龙贷网的电子账户或者乙方在银行的托管子账户，下同）之日，即视为乙方已经收到借款资金，乙方是否提现资金以及是否提现成功不影响本协议的效力、债权效力和利息起算。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="936" width="1261" height="57" uuid="c8c08996-f416-4a07-9fd4-3b1a95186d61"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[二、还款
+2.1还款计划表]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="903" width="1261" height="34" uuid="abe6d54e-96fd-4cd8-84f9-70cdc6dd25d0"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[的资金账户后，即视为各共同借款人均已经收到该笔借款。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="1" y="874" width="794" height="29" uuid="b64b0d6e-ac04-4c82-99ff-9b47c96087a1"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[1.4如乙方为多个借款人，各借款人一致同意本协议项下借款本金按照本协议约定方式转付至乙方]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="842" width="1261" height="32" uuid="6da49827-0c0c-4c84-bace-12c346080f96"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[1.3月利率计算标准：月利率计算标准:月利率＝年利率÷12。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="565" y="675" width="107" height="35" uuid="80dd849f-6350-4672-8d3c-18fd6f68a138"/>
+				<box leftPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[元，大写：]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="794" y="873" width="465" height="29" uuid="d9938070-ac39-4586-8f4d-b50a5349194b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="18" isUnderline="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{idcard}==null?"":$P{idcard}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="126" splitType="Stretch">
+			<componentElement>
+				<reportElement key="table 1" style="table 1" x="0" y="0" width="1261" height="125" uuid="0ef1546c-c5fb-4029-8dc6-b2004c27edb0"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Table Dataset 2" uuid="8c6a36b9-6b6c-47c2-987c-840fdee648de">
+						<dataSourceExpression><![CDATA[$F{table_02}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="204" uuid="ab94035d-2977-4a5a-8b8a-1da807037f85">
+						<jr:columnHeader style="table 1_TD" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="204" height="30" uuid="3cbfa1e9-e8fa-4274-9069-d297434809a9"/>
+								<textElement>
+									<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[还款日期]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 1_TD" height="30" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="204" height="30" uuid="a183e575-630c-42c5-9a3c-77d39d886580"/>
+								<textElement>
+									<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{repayDate}==null?"":$F{repayDate}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="246" uuid="f978d393-143a-4a8b-aa31-fa3ce5f7baa7">
+						<jr:columnHeader style="table 1_TD" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="246" height="30" uuid="5ec66401-9024-4461-ac77-b5283d02a489"/>
+								<textElement>
+									<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[还款本金]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 1_TD" height="30" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="246" height="30" uuid="64472e69-cc0a-4fba-bdf6-6f48174063f6"/>
+								<textElement>
+									<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{repayCapital}==null?"":$F{repayCapital}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="189" uuid="6a35280c-e017-4596-a255-93b8e8945186">
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="189" height="30" uuid="82809951-de33-48fc-9ad3-8e6226b8b84e"/>
+								<textElement>
+									<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[还款利息]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell height="30" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="189" height="30" uuid="ea4c4701-fa64-4dd5-9e12-05b7b7ddc094"/>
+								<textElement>
+									<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{repayInterest}==null?"":$F{repayInterest}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="245" uuid="878ad77a-8b98-4793-b4d7-da63e042686d">
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="245" height="30" uuid="022ddf96-be81-417d-b329-e5d4b3298b32"/>
+								<textElement>
+									<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+								</textElement>
+								<text><![CDATA[服务费]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell height="30" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="245" height="30" uuid="e82ec9ed-d300-45f0-9d28-00e2dcb2e0f7"/>
+								<textElement>
+									<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{replayServicefee}==null?"":$F{replayServicefee}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<summary>
+		<band height="8473" splitType="Stretch">
+			<staticText>
+				<reportElement x="1" y="0" width="1261" height="114" uuid="17dd10f3-b795-4a59-bdd0-3832f49e7aa1"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[注：
+A、每期“还款金额”=每期应还本金+每期应还利息+每期借款人应交服务费
+B、基于丁方为乙方提供包括但不限于信息咨询、信用审核、交易信息管理服务等借款撮合相关服务，乙方应向丁方支付服务费，该服务费的具体收费方式、收费标准由丁方与乙方另行签署服务协议约定。
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="113" width="1261" height="52" uuid="dbeaf78d-7035-41d9-905e-942796d21d14"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[2.2乙方必须按照本协议的约定按时、足额偿还本金、利息及服务费（包括丁方服务费及丁方代收的其他方服务费，下同）。利息计算日即借款基本信息表约定的起息日。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="164" width="155" height="35" uuid="95bb1e87-448b-42ab-89c9-e3eab30c9835"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[2.3乙方依照以下第]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="154" y="164" width="46" height="35" uuid="970b0851-7263-4984-88d0-9ceb9051df23"/>
+				<textElement textAlignment="Right">
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{repaymenttype}==null?"":$P{repaymenttype}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="199" y="164" width="1063" height="35" uuid="0d4c3244-41ca-45b0-9077-3350b7fdc6ce"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[种方式还本付息：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="198" width="1260" height="35" uuid="ec281612-4de8-4ba7-8e62-b0c0e44ad91c"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[2.3.1按期等额本息还款：指每期按相等的金额偿还借款本息，其中每期借款利息按期初剩余借款本金计算并逐期结清。借款人选择以月作为一个还款周]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="266" width="1261" height="59" uuid="e740f6fa-c263-4c4c-bc67-641b7f59bdb0"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[每期等额本息还款额的计算公式如下：
+每月还款金额=借款金额x[月利率x(1+月利率)^还款月数]/[(1+月利率)^还款月数-1]
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="324" width="1259" height="35" uuid="77113498-ccb9-4ed8-809b-03da9ad15ba4"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[2.3.2按期付息到期还本：是指利息按期支付，本金到期一次性偿还。乙方选择以月作为一个还款周期。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="232" width="1260" height="35" uuid="fc0ef2ea-9ea7-4550-a85b-3ad0837364d9"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[期。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="358" width="1261" height="35" uuid="0cd2dfbc-4601-43f0-ace6-ab01f0dc18f3"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[每期利息的计算公式：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="426" width="1258" height="35" uuid="5a5afcd1-c503-427c-ad4e-c81b642adb7a"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[2.3.3按期等额本金还款：指每期按相等的金额偿还借款本金，及当期剩余本金的全部利息，乙方选择以月作为一个还款周期，每期还款额计算公式为：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="392" width="1259" height="35" uuid="17cda9b5-e0fb-46a8-a82a-bd48587bb170"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[每月利息=借款金额×月利率]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="460" width="1258" height="35" uuid="f559e314-8849-4b6d-9b05-9ebe3997a992"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[每月还款额 =借款金额/还款期数+上期剩余本金×月利率2.3.4 等本等息还款：借款金额/借款期限+借款金额*月利率]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="494" width="1261" height="119" uuid="d3cdad5c-0a07-4208-b7e2-0bca4708673c"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[2.4乙方应至少于约定的还款当日中午12点前，将应还借款本金及/或利息、服务费等应还款项足额充值至乙方资金账户。乙方不可撤销地授权丁方或与丁方合作的第三方支付机构或银行于还款日从乙方资金账户中将乙方的资金划转至甲方资金账户（指甲方在翼龙贷网的电子账户或者甲方在银行的存管子账户，下同），划付完毕即视为本期还款成功。当乙方资金账户中的资金余额不足时，乙方不可撤销地授权丁方或与丁方合作的第三方支付机构或银行从乙方指定的银行还款账户中代扣差额（乙方应付款项与乙方资金账户中余额之差）。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="612" width="1259" height="35" uuid="9a213603-fd36-4dce-8483-5510aa025036"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[2.5还款日不受法定假日或公休日影响，还款期届满必须还款。若还款日当月没有该日，则还款日为当月最后一天，节假日不顺延。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="646" width="1258" height="58" uuid="3b38fa9c-7887-4427-8cc5-1a04157fa1d3"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[2.6 如甲方为多个出借人，各出借人独立享有对乙方的借款债权；若乙方的任何一期还款不足以偿还包括但不限于本金、利息、违约金、逾期催收费用服务费等应付款项的，各出借人及平台有权单独对其未收回的借款本息或服务费向乙方追索。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="703" width="1259" height="50" uuid="d9df084d-5525-420a-a4c2-cba82ad09a8f"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[2.7 如乙方为多个借款人，任一借款人均负有清偿全部借款的义务，甲方有权向任一借款人追索本协议项下全部应付款项，包括但不限于本金、利息、违约金等。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="752" width="1259" height="58" uuid="0d2d367b-eaa5-485c-a9b3-3affa3b2ee08"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[2.8 甲方、乙方、丙方同意丁方有权代甲方在有必要时对乙方、丙方进行催收工作，包括但不限于电话通知、发律师函、登门催讨、对乙方及丙方提起诉讼等。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="809" width="1259" height="32" uuid="c94e00de-4d79-4f4f-b48b-b9c9a1e704d8"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[三、 担保]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="840" width="1261" height="93" uuid="98932173-edc1-465a-9c1e-a1f8277a9a8e"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[3.1 担保标的及方式：丙方同意为乙方在本协议项下的全部债务承担连带保证责任。当乙方未依约履行本协议项下债务时，无论本协议项下的债务是否存在其他担保（包括但不限于保证、抵押、质押及其他任何形式的担保方式），甲方均有权直接要求丙方承担全部担保责任，而无须先行行使其他担保权利，且丙方不得向其他担保方追偿。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="932" width="1259" height="59" uuid="124330b1-5c85-4a15-8b4d-6b761d613360"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[3.2担保范围：本协议项下全部到期应付而未付的借款本金及利息、违约金、服务费、损害赔偿金以及为实现债权发生的各项费用（包括但不限于可能发生的诉讼费、财产保全费、执行费、仲裁费、律师代理费、差旅费、评估费、拍卖费、公证费等）。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="990" width="1259" height="68" uuid="ed43a8ee-9c34-4ee9-b175-157bdbbe00e5"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[3.3保证期间：本协议项下保证期间为乙方债务履行期届满（指借款期限届满；借款提前到期的，提前到期日视为债务履行期届满日）之日起两年。丙方同意，经甲方或债权受让人同意展期的借款，丙方同意继续承担保证责任且保证期间为自新约定的债务履行期最终届满之日起二年。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="1057" width="1259" height="61" uuid="6f885474-98cf-4473-9086-0ca85c835abc"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[3.4丙方在承担保证责任后，有权向乙方追偿，如乙方未在丙方要求的期限内偿还丙方代偿款项的，丙方有权向乙方主张代偿金额10%的违约责任，并计收未偿还期间的代偿款项利息（按主协议约定借款利率*1.5计算）。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="1117" width="1259" height="30" uuid="3d39d380-a231-466f-8b36-408104285a8a"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[3.5丙方有权向乙方收取合理的担保费用，费用金额为（/）元人民币。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="1146" width="1259" height="61" uuid="ba9cff2f-0f06-4707-af6f-bd554883836b"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[3.6甲方依法将主债权转让给第三人无须征得丙方同意，丙方在原保证期间和保证范围内继续承担保证责任。本协议有效期间内，未经甲方和丙方书面同意，乙方不得转让债务。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="1206" width="1259" height="38" uuid="184c3a50-d58a-4ef9-8103-73779dae9dd6"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[3.7 物保（仅适用于债务人提供担保物的情况）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="1243" width="1259" height="143" uuid="d3bc9135-cbd0-4587-85dc-39f0b2fc6691"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[3.7.1 乙方或乙方指定的第三方为本协议项下乙方借款提供物（含权利）的担保的，鉴于互联网金融的特殊性，甲方人数众多，相应担保物的交付及登记等手续难以操作，故此甲方无条件且不可撤销地授权丁方或丁方指定的第三方（丁方及丁方指定的第三方统称“名义担保权人”）代为办理相应担保手续，包括但不限于代为接收担保物（含相应权利凭证），代为将担保物登记至名义担保权人名下等。担保物交付至名义担保权人或登记在名义担保权人名下的，视为甲方已接收担保物或担保物已登记在甲方名下，乙方对此安排予以认可并积极配合。如果针对乙方的债权发生转移的，相应担保权利一并转
+移。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="1386" width="1259" height="33" uuid="a8b9ed92-a0d9-4fe9-ab2d-0037a780dfe0"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[3.7.2 为担保本协议项下借款，乙方提供的担保物详见附件三担保物产权/证明证书或抵（质）押物登记（备案）证书/证明。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="1418" width="519" height="33" uuid="a71d80c5-18d0-4341-b53c-12ed622e0258"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[3.7.3甲乙双方指定的名义担保权人为：【王东明，身份证号：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="1450" width="1259" height="64" uuid="1e51731c-004c-4b53-80d5-44717064512f"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[保权人，乙方予以无条件配合。变更名义担保权人不需通知或者另行经甲方同意，甲方不持异议。变更名义担保权人不对本条约定的担保责任产生任何影响。各方确认，名义担保权人系代替甲方或甲方债权受让人代持担保权利，担保权利仍由甲方或甲方债权受让人享有。]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="519" y="1418" width="326" height="33" uuid="f3cf6445-9709-402b-b1e9-ba43b16be508"/>
+				<textElement textAlignment="Center">
+					<font fontName="宋体" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dbIdcard}==null?"":$P{dbIdcard}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="845" y="1418" width="415" height="32" uuid="5cb72bf3-227f-4efe-b522-2c0ca6925e0b"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[】。借款期间，甲方同意丁方有权自行变更名义担]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="1513" width="1259" height="90" uuid="a3d669c2-2ebc-46bc-b607-d0695f26e357"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[3.7.4 各方同意，基于办理担保物抵押、质押登记等手续需要，名义担保权人有权线下与乙方另行签署借款合同、抵（质）押借款合同、最高额借款合同、最高额抵（质）押合同、公证文书等法律文件并提交给登记机关。该部分提交给登记机关的文件仅限于办理担保登记手续使用，各方的借款及担保法律关系仍以本协议约定为主。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="1603" width="1259" height="33" uuid="4dff3fda-1aed-48c2-ac85-38e84ce8b945"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[3.8 其他担保]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="1635" width="1259" height="61" uuid="b914efe9-40d4-4e0c-89cd-c1f952885ae1"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[3.8.1 除本条约定的上述担保外，乙方为其借款债务另行提供其他任何形式担保的，包括但不限于连带责任保证、最高额保证、最高额抵（质）押等，甲方均予以接受并同意相关担保方仅需提供担保函则担保行为即为生效；
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="1696" width="1261" height="32" uuid="212c01fb-7745-45d4-b276-2161a2fd7d9c"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[四、提前还款
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="1728" width="1261" height="437" uuid="c96d6d0d-21be-4ae3-82c8-9fea6f00c795"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[4.1 乙方有权通过丁方向甲方提前偿还全部或部分应付款项。
+4.2提前清偿全部剩余借款
+乙方提前清偿全部剩余借款时，应支付截至提前还款日全部应还本息、服务费（含提前还款日所在当月的服务费）违约金等本协议约定款项。甲方有权收取乙方支付的截至提前还款日全部应还本息。
+4.3 提前偿还部分借款时，
+4.3.1 提前部分还款应按如下顺序进行清偿：
+（1）	截至还款日的应付服务费（含提前还款日所在当月的服务费）；
+（2）	实际借款期间的利息（含提前还款日所在当月的利息）；
+（3）	借款本金;
+（4）	已发生的违约金。
+4.3.3提前部分还款的，根据乙方已偿还完毕借款本金和利息的数额，后期应还借款本息数额相应扣减，但还款方法及期限不变。
+4.4 乙方提前还款当日，自乙方将提前还款金额存入乙方资金账户之时，丁方有权自行或委托丁方指定的第三方支付机构或存管银行将相应款项划付至甲方资金账户内，划付完毕即视为乙方履行完毕该笔还款义务。4.5乙方提前还款的，应向丁方支付提前还款违约金，提前还款违约金为以下二者之和：
+（1）借款本金金额的【0%】；
+（2）相当于乙方提前还款日至当期应还款日之间乙方应缴利息的金额。
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="2164" width="1261" height="32" uuid="a2666a3d-4980-4a73-a85a-298cdf32dc12"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[五、逾期还款]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="2195" width="1261" height="235" uuid="87f993ce-142d-4cd9-a759-e106943eb1c9"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[5.1 鉴于需要为第三方支付或存管银行划付还款预留一定的时间，乙方同意于本协议约定的还款日中午12点前足额还款（包括本金、利息及/或服务费），即乙方应在中午12点前向乙方翼龙贷平台账户足额充值。乙方未按时足额支付应付款项造成甲方资金账户未收到应收款项的，则视为逾期。
+5.2乙方未能按本协议约定足额偿还任何一期款项（注：本合同中的逾期还款，包括本金逾期,利息逾期，服务费逾期、或本金、利息及服务费均逾期中任何一种情况）的，除应继续支付应付款项外，每逾期一日，应按如下约定支付相应的违约金：
+逾期利息违约金：自利息逾期之日起算，按日按未还利息的万分之五支付违约金；
+逾期本金违约金：自本金逾期之日起算，根据当期未还本金数额，每日按【  】支付违约金）。
+5.3 借款期间，当乙方逾期归还任何一期应还本金、利息或者服务费超过30天或者累计三次以上逾期偿还本息及服务费时，为维护甲方合法权益，自逾期之日起，丁方有权代甲方通知乙方本协议项下借款立即全部提前到期，乙方应当立即偿还所欠借款本金、利息、违约金、服务费等全部应付款项。
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="3822" width="1262" height="29" uuid="a9f4cb27-70e7-4166-8be8-fbafe6ff85f2"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[九、争议与解决]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="3850" width="1262" height="116" uuid="bdbd2e93-49f7-4bf7-842c-07c1f7d8183b"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[9.1如各方在本协议履行过程中发生争议，任何一方可将争议提交原告或被告住所地人民法院通过诉讼解决。
+9.2甲方不可撤销地委托丁方或丁方指定人员代为处理本协议项下甲方与乙方之间的全部争议，委托代理权限包括但不限于代为进行提出、承认、变更、放弃诉讼请求；接受调解、和解；代为领取诉讼文书及诉讼标的物；代为办理强制执行公证程序或抵质押手续。甲方同意丁方可将前述委托事项转委托给专业机构及人员（如律师事务所、律师等）启动诉讼程序。
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="2429" width="1261" height="32" uuid="1cf7f8df-73aa-455d-9b28-6936bb1fd0c9"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[六、债权转让]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="2460" width="1261" height="580" uuid="1a7d078e-fadd-4b7c-a49c-b06701457fac"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[6.1 乙方逾期还款导致的债权转让
+6.1.1 借款期间因乙方逾期还款导致借款提前到期的，以及借款期满乙方未按期还款的，甲方同意授权丁方对逾期债权提供债权转让服务，授权范围包括但不限于：代为寻找债权受让人，代为签署债权转让协议，代为收取、冻结、划扣债权转让价款及债权转让服务费（若有），代为向借款人发送债权转让通知。甲方同意丁方届时有权向乙方和丙方发送债权转让通知（但无需另行通知甲方）。通知一经发送，即对乙方和丙方生效。
+6.1.2 在6.1.1项的前提下，丁方可选择通过诉讼、仲裁或其他方式向乙方主张履行还款义务或向丙方主张履行担保义务。甲方同意经追索实现的债权款项先全额支付至丁方指定的账户，再由丁方负责划转至甲方相应账户中。但若因乙方失踪或还款能力丧失等原因导致债权的追偿不能实现或部分不能实现的，本协议项下债权经丁方书面通知乙方和丙方后重新将债权转给甲方。甲方收到丁方通知后有权自行向乙方进行债权的追偿，丁方应当配合向甲方提供甲方实现债权所需文件。
+6.1.3丁方受让甲方债权后，有权将甲方债权转让给第三方并由丁方向乙方和丙方发送债权转让通知。通知一经发送，即对乙方和丙方生效。，债权受让方受让债权后可选择通过诉讼、仲裁或其他方式向乙方主张履行还款义务或向丙方主张履行担保义务。
+6.1.4 如果丁方受托将债权转让给丙方，丙方有权选择以债权受让方或者（承担完毕担保责任后）以担保方名义向乙方主张法律权利；
+6.1.5 乙方逾期还款情形下，乙方还款顺序为：服务费、利息、本金、违约金。
+6.1.6乙方逾期还款后，丁方按照6.1款约定进行债权转让的，不收取债权转让服务费。
+6.2 甲方主动进行的债权转让
+6.2.1本项（6.2）内容适用于翼龙贷网公示的出借人可进行债权转让的情形，依据翼龙贷网公示的规则不能进行债权转让的，不适用本项约定。
+6.2.2依据翼龙贷网公示的规则，若对具体出借期限约定锁定期，则甲方在锁定期内不得申请提现出借本金；在锁定期到期时，甲方有权选择将其所持有的未到期债权通过翼龙贷网平台进行债权转让，具体转让费率（若有）见附件一及翼龙贷网公示的关于转让费率的规定及规则。
+6.2.3甲方一经完成债权转让即委托丁方平台生成债权转让协议，并委托丁方通过丁方平台站内信、平台短信息、邮件、电话、书面通知等任一方式通知乙方，通知一经发出即视为送达，债权转让即对乙方生效，乙方不得拒绝履行还款义务。
+6.2.4 未经甲方或债权受让人书面同意，乙方不得将本协议项下的权利义务转让给任何第三方。
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="3039" width="1262" height="31" uuid="11db584c-9b9a-466c-ab98-fa192145afc4"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[七、服务费和第三方费用]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="3069" width="1262" height="117" uuid="54fe9577-8119-4d98-afa1-6d4e69658241"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[7.1基于丁方向甲乙双方提供包括但不限于信息咨询、信用审核、交易信息管理服务等借款撮合相关服务，甲乙双方同意向丁方支付服务费。服务费的具体收费方式、收费标准由丁方与甲乙双方另行签署《网络借贷服务协议》约定。
+7.2 乙方基于借款需要应向第三方支付的相关费用，例如身份认证费、保险费、家访费、划扣费等费用，由双方另行约定并由丁方代为收取。
+7.3 甲乙双方同意不可撤销地授权丁方或与丁方合作的第三方支付机构或存管银行有权直接从甲乙双方资金账户中扣划服务费及第三方费用。
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="3185" width="1261" height="29" uuid="9ab292b2-c71d-468b-9954-19cede187f49"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[八、违约责任]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="3213" width="1261" height="610" uuid="0e646200-dbd9-4723-800d-8d16b6c2c2b7"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[8.1下述情形视为乙方严重违约：
+（1） 乙方违反其在本协议所做的任何承诺和保证并导致甲方债权可能无法全部实现或者甲方、债权受让人或丁方因此遭受实际损失的；
+（2）乙方擅自改变约定的借款用途；
+（3）乙方提供虚假资料或者故意隐瞒重要事实等骗取贷款的；
+（4）乙方发生经营亏损、财务状况严重恶化等情况，存在逃避、拒绝沟通或拒绝承认欠款事实等恶意行为，或者涉及或可能涉及重大经济纠纷、诉讼、仲裁，或者财产被依法查封、扣押、监管等，可能危及本协议项下债权实现的；
+（5）乙方在借款期限内歇业、解散、清算、停业整顿、被吊销营业执照、被撤销或被申请破产的；
+（6）乙方怠于管理和追索其到期债权，或以无偿或其他不适当方式处分现有主要财产、转移财产或其他逃避债务行为的；
+（7）乙方明确表示或以自己的行为表明不履行本合同项下的任何义务；
+（8）乙方因死亡、被宣告死亡、被宣告失踪、因触犯法律被追究刑事责任、出现重大疾病及事故或丧失民事行为能力后，其继承人、继受人、受遗赠人、监护人、财产代管人拒绝代其清偿债务或无人代其清偿债务；
+（9）乙方其他严重违反合同义务的行为。
+8.2若乙方存在8.1条任一违约情形的，甲方同意并授权丁方有权通过站内信、短信、书面通知等方式通知乙方及/或丙方已发放借款全部提前到期。自丁方通知乙方之日起，本协议项下借款提前到期。
+8.3本协议项下的全部借款本息因乙方逾期还款或者存在8.1条约定的违约情况而被丁方通知提前到期的，乙方应在借款提前到期后三日内，清偿完毕本协议下尚未偿付的全部借款本金、利息、违约金及根据本协议和《网络借贷服务协议》产生的其他全部费用。
+8.4 因乙方未依约履行还款义务而导致各方发起维权行为产生的费用（实现债权的费用）由乙方承担，包括但不限于诉讼费、财产保全费、执行费、仲裁费、律师代理费、差旅费、评估费、拍卖费等。
+8.5乙方因逾期偿还借款或发生本条约定的其他违约情形，且经丁方或债权人催告后未能在合理期限内纠正违约行为的，丁方有权将乙方加入平台黑名单并将乙方逾期信息提供给与丁方合作的征信机构使用，同时有权将乙方的相关信息在媒体、报刊、杂志、网站、论坛等媒介上进行公布，及向乙方用人单位、公安机关、检察机关、法律机关等机构披露，由此造成的损失，丁方不承担任何责任。
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="3965" width="1261" height="32" uuid="778545cf-b4c7-4f12-9d96-2b0951fc7412"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[十、承诺与保证]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="3996" width="1262" height="668" uuid="e57050f9-d393-4364-a743-de07c293bc52"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[10.1甲方、乙方及丙方各自在此确认其为具有完全民事权利能力和完全民事行为能力的自然人或为按照中国法律合法设立并有效存续的企业法人或其他机构，有权签订并履行本协议。
+10.2 甲方承诺并保证：甲方为翼龙贷网注册用户并在本协议有效期内保持翼龙贷网注册用户身份，提供的资金来源合法且全部为自有资金。
+10.3 乙方承诺并保证其向甲、丁双方提供的所有信息均为真实、完整和有效的，并根据本协议列明的借款用途使用借款资金。乙方承诺，截至本协议签署之时，乙方在所有网络借贷信息中介机构的未偿还借款金额不超过100万元（乙方为自然人时）或不超过500万元（乙方为其他组织或法人时）。乙方承诺所借款项不用于包括但不限于赌博、吸毒、贩毒、卖淫嫖娼等任何违法活动。乙方提供虚假借款信息资料或将自己信息故意提供给他人骗取借款的，甲方、甲方债权受让人或丁方有权向有关机关举报追究乙方的刑事责任。
+10.4 丙方承诺并保证其向甲、乙、丁各方提供的所有信息均为真实、完整和有效的，对为乙方在本协议下借款承担连带责任保证可能带来的法律后果和经济责任完全知晓，是本人意思的真实表示。
+10.5借款发放后，乙方应配合做好贷后管理工作，根据丁方要求提交借款用途、收入及资信状况、借款资金流向等方面的证明材料。
+10.6乙方及丙方同意，无论签署本协议之前还是之后，丁方均有权向有关个人征信信用数据库或有关征信单位、部门及个人查询乙方的信用状况，并同意丁方将其在借款还款过程中产生的信用信息（包括但不限于乙方及丙方个人基本信息、借款申请信息、借款合同信息以及履行还款义务情况）提供给与丁方合作的第三方征信机构等相关单位。
+10.7甲乙双方各自承诺不会利用丁方运营的网络借贷平台进行信用卡套现、洗钱、非法集资或其他不正当交易行为，否则应依法独立承担法律责任，丁方有权对甲乙双方资金账户进行冻结并配合司法机关采取其他一切必要的措施。
+10.8甲方和乙方确认，甲乙双方各自授权和委托丁方根据本协议所采取的全部行动和措施的法律后果均归属于甲方和乙方；在任何情形下，丁方不是本协议项下任何借款或债务的债务人；丁方为甲乙双方的居间人，不承担非因丁方过错导致的任何责任。
+10.9甲乙双方应在翼龙贷网站绑定与自身信息相同的银行卡用于提现和归还甲方相关款项，因绑定银行卡错误或银行卡设置问题导致乙方无法提现，或第三方支付机构及监管银行（如有）无法完成款项代扣的，由甲乙方各自承担责任；因此造成乙方借款逾期的，乙方须另行按照本协议第五条的约定履行还款义务及承担相应责任。
+10.10本协议各方确认并同意，委托丁方对本协议项下的所有金额进行计算。丁方对本协议项下任何金额的任何证明或确定，甲乙丙各方均予以认可。
+10.11为资金托管之目的，甲乙双方同意将各自姓名、身份证号码及名下任一在用银行卡账号不可撤销地授权丁方提交给资金托管银行，以便为其开设账户，供资金托管使用。
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="4663" width="1261" height="30" uuid="51e35926-47ac-485c-ba5a-67140aa4f690"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[十一、其他]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="4692" width="1261" height="525" uuid="ac28f3be-f93e-423e-b9bc-6779eda21360"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[11.1本协议经甲、乙、丙、丁各方通过翼龙贷网以网络在线点击确认的方式订立，各方均认可电子签名及电子协议的效力。各方确认并同意由丁方提供的与本协议有关的书面文件或电子信息作为本协议有关事项的终局证明。
+11.2 甲乙双方系通过翼龙贷网络借贷平台完成借贷，双方同意以丁方住所地作为本协议的合同履行地。
+11.3本协议项下所产生的税费由交易各方按照相关的法律法规自行承担。
+11.4除本协议另有约定外，丁方应对甲方和乙方的信息及本协议内容保密，但因相关权力部门（包括但不限于法院、仲裁机构、金融监管机构等）要求，丁方有权披露。
+11.5翼龙贷网站公示的相关交易规则以及经过各方签署或确认的有关本协议的补充协议和附件是本协议组成部分，与本协议具有同等法律效力。
+11.6本协议中的任何一条款如若违反现行适用的法律法规而被认定为无效或不具有强制执行效力，该等无效、不具有强制执行效力的条款并不影响本协议其他条款的效力。
+11.7甲、乙、丙各方委托丁方保管所有与本协议有关的书面文件或电子信息，丁方将其保存在专用服务器上。甲、乙、丙各方均认可该保存条件下的协议效力。
+11.8各方确认，丁方向甲方、乙方及丙方发送的债权转让通知、借款提前到期通知等各类通知，丁方有权以平台站内信、平台短信及/或通知、电子邮件、邮寄、短信、微信、电话等任何一种方式通知相关方。所有通知方式均具有同等法律效力。各方通讯方式或地址发生变更的，应当在变更后三日内将更新后的信息提供给丁方，否则，任何法律文件的发送仍以原有地址和方式作为有效依据，因此带来的损失或额外费用由信息提供方自行承担。
+11.9根据借款项目要求，乙方（含乙方配偶）需要购买意外伤害保险的，丁方代为办理并直接将应交纳的保险费从乙方所借得款项中扣除并代交。乙方同意，在保险期间内，乙方作为被保险人因遭受意外伤害或疾病而致身故、全残的，保险公司依照保险合同约定给付保险金额的第一受益人为丁方，由丁方将收到的保险赔偿金额用于支付应付甲方、甲方债权受让人和丁方的费用。如果乙方或者投保人向保险公司书面提出变更第一受益人的申请，需事先取得丁方的书面同意，具体保险条款以保险公司出具的保险告知书或其它保险合同文件为准，详见附件二。
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="5216" width="1261" height="30" uuid="e09f7d54-1f03-4875-8fdc-db4cbf05abb9"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[十二、特别约定条款]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="5245" width="1262" height="59" uuid="98075238-f4a5-4ec8-9d0c-9b3ea83e4a89"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[12.1 【无】
+12.2 本条款与其他条款约定不一致的，以本条款约定内容为准。
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="5303" width="1261" height="60" uuid="3d1ef3f4-a676-402f-8c2a-8e3f4578f545"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[甲方（出借人）：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="5363" width="1261" height="60" uuid="320059f8-8574-41ee-a611-087b73361230"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[乙方（借款人）：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="5423" width="1261" height="60" uuid="f6f9a293-8e8e-4447-bd34-287e2822d065"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[乙方（共同借款人）：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="5482" width="1261" height="60" uuid="24e765ff-22eb-4bf0-a0e3-58da05edcae0"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[丙方（担保人）：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="5541" width="1261" height="60" uuid="f7bf0ae7-ca55-487a-a4eb-bb8f5e0670e1"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[丁方（服务方）：北京同城翼龙网络科技有限公司]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="5600" width="1261" height="60" uuid="d16abcc1-1c8b-414c-b295-610158a1c302"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[签署日期:         年    月     日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="5842" width="1261" height="32" uuid="9f29e61d-dbe5-4b1a-8ce1-4d5a15339039"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[附件一、债权转让规则]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement key="table 4" style="table 4" x="163" y="5874" width="934" height="140" uuid="44769975-99d8-4aaf-a16f-04c0bac4d914"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Table Dataset 3" uuid="8510e8cc-98ca-4cf6-a54d-ff2c5e7ad553">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="347" uuid="91b257b2-abfc-4433-8fba-d4ac7f2df43d">
+						<jr:tableHeader height="63" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="347" height="32" uuid="7837f6d8-5052-4e19-9c63-c7377324f938"/>
+								<box>
+									<bottomPen lineWidth="1.0"/>
+								</box>
+								<textElement>
+									<font fontName="宋体" size="18"/>
+								</textElement>
+								<text><![CDATA[锁定期]]></text>
+							</staticText>
+							<staticText>
+								<reportElement x="0" y="31" width="347" height="32" uuid="cd148e21-7921-414a-8611-a37522edcff3"/>
+								<textElement>
+									<font fontName="宋体" size="18"/>
+								</textElement>
+								<text><![CDATA[锁定期截止日]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="347" height="30" uuid="e9ef8ef8-c19b-44b8-ae51-ed6cebb6d861"/>
+								<textElement>
+									<font fontName="宋体" size="18"/>
+								</textElement>
+								<text><![CDATA[转让费率执行时间]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 4_TD" height="32" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="347" height="32" uuid="6541281b-1c00-48bf-80f3-9c8aa565d56c"/>
+								<textElement>
+									<font fontName="宋体" size="18"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{transferFeeExeTime}==null?"":$F{transferFeeExeTime}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="345" uuid="334f675b-3d64-4816-b047-56e8fbd11405">
+						<jr:tableHeader height="63" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="345" height="32" uuid="e129fa31-15ed-46b0-b9b5-0db73fd60fb0"/>
+								<box>
+									<bottomPen lineWidth="1.0"/>
+								</box>
+								<textElement>
+									<font fontName="宋体" size="18"/>
+								</textElement>
+								<text><![CDATA[30天]]></text>
+							</staticText>
+							<textField>
+								<reportElement x="0" y="31" width="345" height="32" uuid="eca95665-413d-42b7-9510-892bdb9f4485"/>
+								<textElement>
+									<font fontName="宋体" size="18"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$P{lockEndTime}==null?"":$P{lockEndTime}]]></textFieldExpression>
+							</textField>
+						</jr:tableHeader>
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="345" height="30" uuid="a472769c-1fa7-4530-b158-f10cc4b68d4e"/>
+								<textElement>
+									<font fontName="宋体" size="18"/>
+								</textElement>
+								<text><![CDATA[转让费率]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 4_TD" height="32" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="345" height="32" uuid="1b7c4e79-13a7-4ffd-81c0-ceae657f4a0f"/>
+								<textElement>
+									<font fontName="宋体" size="18"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{transferRate}==null?"":$F{transferRate}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<staticText>
+				<reportElement x="163" y="6014" width="934" height="30" uuid="550523af-2786-406a-ac7a-5aaffe99cb09"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[注：锁定期截止日的24:00之后才可转让；锁定期内不得提现。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="6096" width="1261" height="32" uuid="442d5117-96c4-4f8d-9465-8f87d960a7d0"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[附件二：保险条款]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="6127" width="1261" height="32" uuid="a2ea2826-88c2-4bde-bf4b-62e46cd6cdc2"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[尊敬的用户：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="6159" width="1261" height="32" uuid="a7fcd96b-4e13-4426-b76f-05eb7e08aa56"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[您已获得一份意外伤害保险。为帮助您更好地认识这份保险，请您认真阅读以下内容：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="248" y="6191" width="380" height="32" uuid="75eb41cd-14f8-47a8-9b3f-f158c0e634a6"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[客户姓名]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="248" y="6223" width="380" height="32" uuid="59914828-50c0-44b4-80e2-34d5d65b244d"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[身份证号码]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="247" y="6255" width="380" height="32" uuid="74fcb54e-3ae4-4bba-9231-0faa9f08e31a"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[其他证件号码（注册证件类型）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="248" y="6287" width="380" height="32" uuid="807fdb27-c412-493a-8064-db518c782088"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[借款合同号]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="247" y="6319" width="380" height="32" uuid="59716894-bc89-481b-8102-6b1be7e4fa4c"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[借款金额]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="247" y="6351" width="380" height="32" uuid="10840d23-4a4e-4395-99e9-70294e116b84"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[保险金额]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="248" y="6383" width="380" height="32" uuid="baec3b18-7fe5-4506-96a7-9d81465dad75"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[保险费率]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="248" y="6414" width="380" height="32" uuid="de90eaa3-238b-4e08-9f7e-7499a6ffb35b"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[保险费]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="628" y="6191" width="380" height="32" uuid="c9363c39-0a79-4839-bdfe-2ccb7be95230"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{realname}==null?"":$P{realname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="628" y="6223" width="380" height="32" uuid="16d39ae5-226b-4102-89aa-f79552bab32b"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{idcard}==null?"":$P{idcard}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="628" y="6255" width="380" height="32" uuid="8a05d455-37ad-4c47-9f6c-28aea864f8c9"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{idcard}==null?"":$P{idcard}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="628" y="6287" width="380" height="32" uuid="d5ae2dc9-460f-4894-b68f-e6702ff2ad22"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{contractNO}==null?"":$P{contractNO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="628" y="6319" width="380" height="32" uuid="68cdd93d-9bc9-456b-acd4-b5971d4ea165"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{smallAmount}==null?"":$P{smallAmount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="628" y="6350" width="380" height="32" uuid="c6493ee8-6b8c-4262-b598-2a56a85940a9"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{insuranceAmount}==null?"":$P{insuranceAmount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="628" y="6382" width="380" height="32" uuid="6d344d69-2a47-4a1b-a6bd-e204a992afe6"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{insuranceRate}==null?"":$P{insuranceRate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="628" y="6414" width="380" height="32" uuid="98f82e04-bdae-40fc-92d2-b1072f2448f2"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{insuranceFee}==null?"":$P{insuranceFee}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="6446" width="1261" height="32" uuid="04d98c6c-38af-4483-a283-0ed76077a997"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[保险责任为在保险期间内，被保险人因遭受意外伤害或疾病而致身故、全残的，保险公司依照保险合同约定给付保险金额。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="247" y="6478" width="380" height="32" uuid="22332775-a0d5-41ba-a2a4-1032527b1cfc"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[保险起期]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="628" y="6478" width="380" height="32" uuid="84c32226-4bb3-47e3-8432-2bab39f55f51"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[以保险公司保单为准]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="248" y="6510" width="380" height="32" uuid="b074382a-a101-426a-bcd9-745f68f1dbd7"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[保险期限]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="628" y="6510" width="380" height="32" uuid="e655f3f0-c2f9-480d-97c0-d068a1c706c2"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[以保险公司保单为准]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="6554" width="1261" height="954" uuid="9d82b107-a0a3-40ed-b15f-bdf880f6f1d3"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[特别约定：第一受益人：北京同城翼龙网络科技有限公司
+           第二受益人：法定
+    如果被保险人或者投保人向保险公司书面提出变更第一受益人的申请，保险公司需在做出变更前，取得第一受益人的书面同意。
+责任免除
+因下列情形之一导致本保险合同的被保险人身故、残疾的，保险人不承担保险金给付责任：
+如果被保险人或者投保人向阳光保险书面提出变更第一受益人的申请，阳光保险需在做出变更前，取得第一受益人的书面同意
+（一）投保人的任何故意行为；
+（二）因被保险人的挑衅而导致的打斗、被袭击或被谋杀；
+（三）被保险人因从事非法、故意犯罪的活动或因抗拒依法采取的刑事强制措施而导致的伤害；
+（四）被保险人自致伤害或自杀，但被保险人自杀时为无民事行为能力人的除外；
+（五）被保险人未遵医嘱，私自服用、涂用、注射药物；
+（六）被保险人因精神类疾病发作而导致的伤害；被保险人患性传播疾病、法定传染病；
+（七）被保险人因妊娠（含宫外孕）、流产、分娩、不孕不育症（包括人工受孕、试管婴儿等）、避孕及节育手术或由妊娠、分娩、流产、节育所导致的任何并发症；
+（八）被保险人被细菌或病毒感染（但因意外伤害事故致有伤口而感染的除外）；
+（九）被保险人因食物/药物过敏、食物中毒、中暑、整容手术、高原反应、猝死、椎间盘突出症（包括椎间盘膨出、椎间盘突出、椎间盘脱出、游离型椎间盘等类型）、医疗事故或其他医疗导致的伤害；
+（十）被保险人从事潜水、滑水、滑雪、风浪板、蹦极、跳伞、水上摩托艇、滑翔翼、攀岩运动、探险活动、拳击、柔道、跆拳道、空手道、武术比赛、摔跤比赛、特技表演、马术、赛马、各种车辆表演、赛车运动、驾驶卡丁车等高风险运动；
+（十一）被保险人患先天性疾病、遗传性疾病、先天性畸形、变形或染色体异常；
+（十二）被保险人在遭受意外伤害事故前已拖欠贷款人的贷款本息及违约金、违约金；
+（十三）被保险人因意外伤害事故以外的原因失踪而被法院宣告死亡的；
+（十四）恐怖活动；
+（十五）任何生物、化学、原子能武器，原子能或核能装置所造成的爆炸、灼伤、污染或辐射。
+（十六）战争、军事行动、暴乱或武装叛乱期间；
+（十七）被保险人依法被拘禁或服刑期间；
+（十八）被保险人醉酒或受酒精、毒品、管制药物的影响期间；
+（十九）被保险人酒后驾驶、无有效驾驶证驾驶及驾驶无有效行驶证的机动交通工具期间；
+（二十）被保险人患艾滋病或感染艾滋病病毒期间。
+（二十一）被保险人酗酒，服用、吸食或注射毒品或未经注册医师处方的麻醉剂或药物；
+（二十二）被保险人不遵守一样规章制定，不配合治疗的行为造成的后果；
+（二十三）被保险人在参加本附加保险合同前已经存在的既往症、受伤或异常检查结果（续保者除外）；
+（二十四）被保人因精神类疾病如精神分裂症、抑郁症、厌食症、失眠症等发作而导致的事故。
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="7508" width="1261" height="60" uuid="4c2c03f0-c8d1-4c5e-9d6c-f368dd2dec57"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[被保险人（签字）： ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="7567" width="1261" height="60" uuid="c2f0acec-4f78-4e7a-8f8b-3ec62f5e7414"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[被保险人配偶（签字）:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="7627" width="1261" height="60" uuid="ccac30c2-df00-4793-89cb-0679667dc25c"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[      日期：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="7762" width="1261" height="32" uuid="75ef7ace-c860-4514-8416-4862ac330b39"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[附件三：乙方提供的担保物权属证明/证书或抵（质）押物登记（备案）证书/证明]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="8247" width="1261" height="32" uuid="7e618564-0351-4880-8061-0eccbcd6b2d8"/>
+				<textElement>
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[本人确定上述附件的真实性。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="8278" width="1261" height="60" uuid="2bc73ad3-22a6-468b-b09e-26214370d763"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[借款人：（签字/公章）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="8337" width="1261" height="60" uuid="ebf8c4c7-383c-480a-b107-56b3664fc772"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[共借人：（签字/公章）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="8396" width="1261" height="60" uuid="7d3fe2a2-229c-45d4-b0b4-365f7b3ed1dc"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="宋体" size="18" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="22.0"/>
+				</textElement>
+				<text><![CDATA[担保人：（签字/公章）]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
