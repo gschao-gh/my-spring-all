@@ -1,5 +1,6 @@
 package com.spr.uploadtest.protocol;
 
+import com.spr.upload.protocol.service.LendingProtocolService;
 import com.spr.upload.protocol.service.TransferProtocolService;
 
 /**
@@ -10,6 +11,8 @@ public class ProtocolCreateTest {
 
     public static void main(String[] args) {
         TransferProtocolService transferProtocolService = new TransferProtocolService();
+        LendingProtocolService lendingProtocolService = new LendingProtocolService();
         transferProtocolService.create();
+        lendingProtocolService.create();
     }
 }

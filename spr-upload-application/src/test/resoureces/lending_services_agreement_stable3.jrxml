@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="lending_services_agreement" language="groovy" pageWidth="595" pageHeight="10000" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1e6a9b30-e25b-41ba-b5c7-db46366ea7af">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="lending_services_agreement" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1e6a9b30-e25b-41ba-b5c7-db46366ea7af">
 	<property name="ireport.zoom" value="1.0000000000000016"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="2256"/>
+	<property name="ireport.y" value="2309"/>
 	<style name="table">
 		<box>
 			<pen lineWidth="1.0" lineColor="#000000"/>
@@ -64,9 +64,10 @@
 		</box>
 	</style>
 	<subDataset name="lending Dataset 1" uuid="d5591fb3-1773-4e2b-8c8b-ec152f153766">
+		<parameter name="table01" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
 		<field name="accountNo" class="java.lang.String"/>
 		<field name="lendingRealName" class="java.lang.String"/>
-		<field name="IdCard" class="java.lang.String"/>
+		<field name="idCard" class="java.lang.String"/>
 		<field name="lendingAmount" class="java.lang.String"/>
 		<field name="useWay" class="java.lang.String"/>
 		<field name="remark" class="java.lang.String"/>
@@ -88,6 +89,10 @@
 	<parameter name="loanRate" class="java.lang.String"/>
 	<parameter name="loanTimeLimit" class="java.lang.String"/>
 	<parameter name="earnType" class="java.lang.String"/>
+	<parameter name="table_01" class="java.util.List"/>
+	<parameter name="table_02" class="java.util.List"/>
+	<field name="table_01bak" class="net.sf.jasperreports.engine.data.JRMapCollectionDataSource"/>
+	<field name="table_02bak" class="net.sf.jasperreports.engine.data.JRMapCollectionDataSource"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -153,7 +158,7 @@
 			<textField>
 				<reportElement x="99" y="140" width="146" height="20" uuid="b0e476f8-3d49-4dac-a948-98513d79c3e1"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="宋体" size="12"/>
+					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{accountNum}==null?"":$P{accountNum}]]></textFieldExpression>
 			</textField>
@@ -897,17 +902,17 @@
 				<reportElement x="0" y="248" width="555" height="1" uuid="bd2317c9-1599-4988-bc12-0bebb2e851d5"/>
 			</break>
 			<staticText>
-				<reportElement x="0" y="273" width="555" height="22" uuid="d82c7482-813e-4bfe-bd72-69c99808ef12"/>
+				<reportElement x="0" y="249" width="555" height="22" uuid="d82c7482-813e-4bfe-bd72-69c99808ef12"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[    附件一：借款基本信息]]></text>
 			</staticText>
 			<componentElement>
-				<reportElement key="table 1" style="table 1" x="0" y="294" width="555" height="140" uuid="67a4247e-0d0e-4c5d-b463-5b3f89f0eaf3"/>
+				<reportElement key="table 1" style="table 1" x="0" y="271" width="555" height="140" uuid="67a4247e-0d0e-4c5d-b463-5b3f89f0eaf3"/>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
-					<datasetRun subDataset="lending Dataset 1" uuid="89a3ca1b-5999-4382-9f28-384526d4d51d">
-						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					<datasetRun subDataset="lending Dataset 1" uuid="45216530-d1fa-44d4-b04a-5e2f2ca76cb1">
+						<dataSourceExpression><![CDATA[$F{table_01bak}]]></dataSourceExpression>
 					</datasetRun>
 					<jr:column width="140" uuid="91b989a6-eddb-42ad-b8a2-41040c1b5988">
 						<jr:columnHeader style="table_TD" height="30" rowSpan="1">
@@ -923,7 +928,7 @@
 							<textField>
 								<reportElement x="0" y="0" width="140" height="51" uuid="76131be4-cf13-4f70-8cf0-04386e66a5aa"/>
 								<textElement>
-									<font fontName="宋体" size="16"/>
+									<font fontName="宋体" size="16" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{accountNo}==null?"":$F{accountNo}]]></textFieldExpression>
 							</textField>
@@ -944,7 +949,7 @@
 							<textField>
 								<reportElement x="0" y="0" width="140" height="51" uuid="a08c5135-9c84-4a6d-adc0-aefc63fc4e4b"/>
 								<textElement>
-									<font fontName="宋体" size="16"/>
+									<font fontName="宋体" size="16" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{lendingRealName}==null?"":$F{lendingRealName}]]></textFieldExpression>
 							</textField>
@@ -964,9 +969,9 @@
 							<textField>
 								<reportElement x="0" y="0" width="231" height="51" uuid="ba648aac-9ed3-4eb6-9d45-6c44d73f817c"/>
 								<textElement>
-									<font fontName="宋体" size="16"/>
+									<font fontName="宋体" size="16" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 								</textElement>
-								<textFieldExpression><![CDATA[$F{IdCard}==null?"":$F{IdCard}]]></textFieldExpression>
+								<textFieldExpression><![CDATA[$F{idCard}==null?"":$F{idCard}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
@@ -984,7 +989,7 @@
 							<textField>
 								<reportElement x="0" y="0" width="106" height="51" uuid="3d537a3b-fad3-43dd-af33-636bda8c6b54"/>
 								<textElement>
-									<font fontName="宋体" size="16"/>
+									<font fontName="宋体" size="16" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{lendingAmount}==null?"":$F{lendingAmount}]]></textFieldExpression>
 							</textField>
@@ -1033,7 +1038,7 @@
 				</jr:table>
 			</componentElement>
 			<staticText>
-				<reportElement x="0" y="469" width="555" height="22" uuid="40387d33-d7ee-4669-9b75-47748f89afe4">
+				<reportElement x="0" y="411" width="555" height="22" uuid="40387d33-d7ee-4669-9b75-47748f89afe4">
 					<printWhenExpression><![CDATA[$P{productType}.matches( "[1,5,7,8,9]{1}" )]]></printWhenExpression>
 				</reportElement>
 				<textElement verticalAlignment="Middle">
@@ -1042,7 +1047,7 @@
 				<text><![CDATA[附件二：甲方资金的出借条件]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="22" y="491" width="99" height="22" uuid="2b9ce965-13b0-4dc1-88a1-c72de2cb26fd">
+				<reportElement x="22" y="438" width="99" height="22" uuid="2b9ce965-13b0-4dc1-88a1-c72de2cb26fd">
 					<printWhenExpression><![CDATA[$P{productType}.matches( "[1,5,7,8,9]{1}" )]]></printWhenExpression>
 				</reportElement>
 				<box>
@@ -1055,7 +1060,7 @@
 				<text><![CDATA[出借金额]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="286" y="491" width="99" height="22" uuid="b464d7ef-01a2-4659-af97-be8fd1fba70c">
+				<reportElement x="286" y="438" width="99" height="22" uuid="b464d7ef-01a2-4659-af97-be8fd1fba70c">
 					<printWhenExpression><![CDATA[$P{productType}.matches( "[1,5,7,8,9]{1}" )]]></printWhenExpression>
 				</reportElement>
 				<box>
@@ -1069,7 +1074,7 @@
 				<text><![CDATA[预期收益率]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="121" y="491" width="165" height="22" uuid="755ccf21-cc1f-45e3-9332-522e317bf9aa">
+				<reportElement x="121" y="438" width="165" height="22" uuid="755ccf21-cc1f-45e3-9332-522e317bf9aa">
 					<printWhenExpression><![CDATA[$P{productType}.matches( "[1,5,7,8,9]{1}" )]]></printWhenExpression>
 				</reportElement>
 				<box>
@@ -1077,12 +1082,12 @@
 					<leftPen lineWidth="1.0"/>
 				</box>
 				<textElement>
-					<font fontName="宋体" size="14"/>
+					<font fontName="宋体" size="14" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{loanAmount}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="384" y="491" width="135" height="22" uuid="f6f119da-23d0-442d-975f-309a23d756b9">
+				<reportElement x="384" y="438" width="135" height="22" uuid="f6f119da-23d0-442d-975f-309a23d756b9">
 					<printWhenExpression><![CDATA[$P{productType}.matches( "[1,5,7,8,9]{1}" )]]></printWhenExpression>
 				</reportElement>
 				<box>
@@ -1096,7 +1101,7 @@
 				<textFieldExpression><![CDATA[$P{loanRate}==null?"":$P{loanRate}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="22" y="513" width="99" height="22" uuid="0fa67520-48a6-4776-bbbe-4a89ae140d91">
+				<reportElement x="22" y="460" width="99" height="22" uuid="0fa67520-48a6-4776-bbbe-4a89ae140d91">
 					<printWhenExpression><![CDATA[$P{productType}.matches( "[1,5,7,8,9]{1}" )]]></printWhenExpression>
 				</reportElement>
 				<box>
@@ -1110,7 +1115,7 @@
 				<text><![CDATA[出借期限]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="121" y="513" width="165" height="22" uuid="2b9dd0b3-7e3b-4d49-94a1-2174927426d2">
+				<reportElement x="121" y="460" width="165" height="22" uuid="2b9dd0b3-7e3b-4d49-94a1-2174927426d2">
 					<printWhenExpression><![CDATA[$P{productType}.matches( "[1,5,7,8,9]{1}" )]]></printWhenExpression>
 				</reportElement>
 				<box>
@@ -1124,7 +1129,7 @@
 				<textFieldExpression><![CDATA[$P{loanTimeLimit}==null?"":$P{loanTimeLimit}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="286" y="513" width="99" height="22" uuid="ba70fcba-eb3f-4218-b128-3da3f8350aff">
+				<reportElement x="286" y="460" width="99" height="22" uuid="ba70fcba-eb3f-4218-b128-3da3f8350aff">
 					<printWhenExpression><![CDATA[$P{productType}.matches( "[1,5,7,8,9]{1}" )]]></printWhenExpression>
 				</reportElement>
 				<box>
@@ -1139,7 +1144,7 @@
 				<text><![CDATA[收益方式]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="384" y="513" width="135" height="22" uuid="9c20c2ff-0248-4b34-8366-ae5d73423e3c">
+				<reportElement x="384" y="460" width="135" height="22" uuid="9c20c2ff-0248-4b34-8366-ae5d73423e3c">
 					<printWhenExpression><![CDATA[$P{productType}.matches( "[1,5,7,8,9]{1}" )]]></printWhenExpression>
 				</reportElement>
 				<box>
@@ -1154,7 +1159,7 @@
 				<textFieldExpression><![CDATA[$P{earnType}==null?"":$P{earnType}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="0" y="535" width="555" height="22" uuid="2bd30a0e-54f7-4181-8145-b72f71fb5e18">
+				<reportElement x="0" y="505" width="555" height="22" uuid="2bd30a0e-54f7-4181-8145-b72f71fb5e18">
 					<printWhenExpression><![CDATA[$P{productType}.matches( "[3]{1}" )]]></printWhenExpression>
 				</reportElement>
 				<textElement verticalAlignment="Middle">
@@ -1163,17 +1168,17 @@
 				<text><![CDATA[附件二：甲方资金的出借条件]]></text>
 			</staticText>
 			<componentElement>
-				<reportElement key="table 2" style="table 2" x="0" y="556" width="555" height="140" uuid="1f6839f9-a531-4e3b-9d5b-a3945dcf8541">
+				<reportElement key="table 2" style="table 2" x="0" y="528" width="555" height="140" uuid="1f6839f9-a531-4e3b-9d5b-a3945dcf8541">
 					<printWhenExpression><![CDATA[$P{productType}.matches( "[3]{1}" )]]></printWhenExpression>
 				</reportElement>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
-					<datasetRun subDataset="lending Dataset 2" uuid="78abba77-cd2c-4243-94c6-05370c0ae9fc">
-						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					<datasetRun subDataset="lending Dataset 2" uuid="e34f7064-fbaa-4fe1-8dbd-e2246faf8a36">
+						<dataSourceExpression><![CDATA[$F{table_02bak}]]></dataSourceExpression>
 					</datasetRun>
-					<jr:column width="177" uuid="ed21dca6-67b9-49b1-97dd-6c4a512bc832">
+					<jr:column width="95" uuid="ed21dca6-67b9-49b1-97dd-6c4a512bc832">
 						<jr:columnHeader style="table 1_TD" height="32" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="177" height="32" uuid="89860efe-0866-47b8-a162-bac37da40493"/>
+								<reportElement x="0" y="0" width="94" height="32" uuid="89860efe-0866-47b8-a162-bac37da40493"/>
 								<textElement verticalAlignment="Middle">
 									<font fontName="宋体" size="14" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 								</textElement>
@@ -1182,7 +1187,7 @@
 						</jr:columnHeader>
 						<jr:detailCell style="table 2_TD" height="32" rowSpan="1">
 							<textField>
-								<reportElement x="0" y="0" width="177" height="32" uuid="5aff4bba-c9c3-49cd-a073-593fe57b634d"/>
+								<reportElement x="0" y="0" width="94" height="32" uuid="5aff4bba-c9c3-49cd-a073-593fe57b634d"/>
 								<textElement verticalAlignment="Middle">
 									<font fontName="宋体" size="14" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 								</textElement>
@@ -1190,10 +1195,10 @@
 							</textField>
 						</jr:detailCell>
 					</jr:column>
-					<jr:column width="191" uuid="f44227a2-8035-49fc-9e4b-b5604e686410">
+					<jr:column width="91" uuid="f44227a2-8035-49fc-9e4b-b5604e686410">
 						<jr:columnHeader style="table 1_TD" height="32" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="191" height="32" uuid="2d18003a-1cba-45bf-b650-a84609bcb453"/>
+								<reportElement x="0" y="0" width="91" height="32" uuid="2d18003a-1cba-45bf-b650-a84609bcb453"/>
 								<textElement verticalAlignment="Middle">
 									<font fontName="宋体" size="14" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 								</textElement>
@@ -1202,7 +1207,7 @@
 						</jr:columnHeader>
 						<jr:detailCell style="table 2_TD" height="32" rowSpan="1">
 							<textField>
-								<reportElement x="0" y="0" width="191" height="32" uuid="4e31fb11-8f89-4da4-bd9c-90043fb3882f"/>
+								<reportElement x="0" y="0" width="90" height="32" uuid="4e31fb11-8f89-4da4-bd9c-90043fb3882f"/>
 								<textElement verticalAlignment="Middle">
 									<font fontName="宋体" size="14" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 								</textElement>
@@ -1210,10 +1215,10 @@
 							</textField>
 						</jr:detailCell>
 					</jr:column>
-					<jr:column width="192" uuid="d2cdde47-71be-4b08-abbe-c3447bad5341">
+					<jr:column width="87" uuid="d2cdde47-71be-4b08-abbe-c3447bad5341">
 						<jr:columnHeader style="table 1_TD" height="32" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="192" height="32" uuid="027931dd-3e1e-44a5-81bd-f23e9e257b73"/>
+								<reportElement x="0" y="0" width="87" height="32" uuid="027931dd-3e1e-44a5-81bd-f23e9e257b73"/>
 								<textElement verticalAlignment="Middle">
 									<font fontName="宋体" size="14" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 								</textElement>
@@ -1222,7 +1227,7 @@
 						</jr:columnHeader>
 						<jr:detailCell style="table 2_TD" height="32" rowSpan="1">
 							<textField>
-								<reportElement x="0" y="0" width="192" height="32" uuid="c874c70c-b596-46ce-af46-9bd721a6113b"/>
+								<reportElement x="0" y="0" width="87" height="32" uuid="c874c70c-b596-46ce-af46-9bd721a6113b"/>
 								<textElement verticalAlignment="Middle">
 									<font fontName="宋体" size="14" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 								</textElement>
@@ -1230,10 +1235,10 @@
 							</textField>
 						</jr:detailCell>
 					</jr:column>
-					<jr:column width="181" uuid="36445854-be28-43ea-93f4-10c15df08ed5">
+					<jr:column width="84" uuid="36445854-be28-43ea-93f4-10c15df08ed5">
 						<jr:columnHeader style="table 1_TD" height="32" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="181" height="32" uuid="d17ea253-fcc8-4132-b01e-527ea9667627"/>
+								<reportElement x="0" y="0" width="84" height="32" uuid="d17ea253-fcc8-4132-b01e-527ea9667627"/>
 								<textElement verticalAlignment="Middle">
 									<font fontName="宋体" size="14" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 								</textElement>
@@ -1242,7 +1247,7 @@
 						</jr:columnHeader>
 						<jr:detailCell style="table 2_TD" height="32" rowSpan="1">
 							<textField>
-								<reportElement x="0" y="0" width="181" height="32" uuid="3a62b1e3-8aaa-41aa-aa68-d929ea4383fc"/>
+								<reportElement x="0" y="0" width="84" height="32" uuid="3a62b1e3-8aaa-41aa-aa68-d929ea4383fc"/>
 								<textElement verticalAlignment="Middle">
 									<font fontName="宋体" size="14" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 								</textElement>
@@ -1250,10 +1255,10 @@
 							</textField>
 						</jr:detailCell>
 					</jr:column>
-					<jr:column width="173" uuid="ad4766f1-bf4e-46da-a075-fdceabd348db">
+					<jr:column width="92" uuid="ad4766f1-bf4e-46da-a075-fdceabd348db">
 						<jr:columnHeader style="table_TD" height="32" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="173" height="32" uuid="76a4cbf7-2a74-4aba-a9ec-1869050d50d4"/>
+								<reportElement x="0" y="0" width="92" height="32" uuid="76a4cbf7-2a74-4aba-a9ec-1869050d50d4"/>
 								<textElement verticalAlignment="Middle">
 									<font fontName="宋体" size="14" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 								</textElement>
@@ -1262,7 +1267,7 @@
 						</jr:columnHeader>
 						<jr:detailCell height="32" rowSpan="1">
 							<textField>
-								<reportElement x="0" y="0" width="173" height="32" uuid="fd475bab-c8f0-4780-a21b-f15358de06cb"/>
+								<reportElement x="0" y="0" width="92" height="32" uuid="fd475bab-c8f0-4780-a21b-f15358de06cb"/>
 								<textElement verticalAlignment="Middle">
 									<font fontName="宋体" size="14" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 								</textElement>
