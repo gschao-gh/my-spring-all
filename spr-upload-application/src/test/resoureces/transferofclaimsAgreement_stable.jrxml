@@ -188,28 +188,28 @@
 					<font fontName="宋体" size="12" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 					<paragraph lineSpacing="1_1_2"/>
 				</textElement>
-				<text><![CDATA[的《网络借贷协议》/《翼龙贷网络借款]]></text>
+				<text><![CDATA[的《网络借贷协议》/《xxxx网络借款]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="8" y="21" width="540" height="22" uuid="f61fe143-ffd2-4026-a321-3c0c08804b4c"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[电子借条》（以下统称“借款协议”）中出借人所享有的债权及全部从属权利，现转让人通过翼龙贷]]></text>
+				<text><![CDATA[电子借条》（以下统称“借款协议”）中出借人所享有的债权及全部从属权利，现转让人通过xxxx]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="8" y="43" width="540" height="22" uuid="55668949-89d2-45b4-8f01-2fc4bae2c1a8"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[网（www.eloancn.com或www.yilongdai.com）及其开发并运营的移动终端APP（翼龙贷网及移动终端]]></text>
+				<text><![CDATA[网（www.xxxx.com或www.xxxx.com）及其开发并运营的移动终端APP（xxxx网及移动终端]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="8" y="64" width="540" height="22" uuid="adf85f01-08f4-47f0-8c7c-e9b419e643d9"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[APP统称翼龙贷）向受让人转让该债权。]]></text>
+				<text><![CDATA[APP统称xxxx）向受让人转让该债权。]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="8" y="85" width="540" height="22" uuid="753b7706-1798-45d9-874f-d106e04b0a05"/>
@@ -321,35 +321,35 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[1.3 本协议各方确认，债权转让人自愿委托翼龙贷发布债权转让要约或按翼龙贷网公布的产品交易规则]]></text>
+				<text><![CDATA[1.3 本协议各方确认，债权转让人自愿委托xxxx发布债权转让要约或按xxxx网公布的产品交易规则]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="8" y="232" width="540" height="22" uuid="3723408e-e0db-4533-897b-462711b4046f"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[接受翼龙贷网提供债权转让的系统撮合服务。债权转让人委托翼龙贷发布债权转让信息的，视为债权转]]></text>
+				<text><![CDATA[接受xxxx网提供债权转让的系统撮合服务。债权转让人委托xxxx发布债权转让信息的，视为债权转]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="8" y="253" width="540" height="22" uuid="f8eba43e-96c6-48c4-bff3-8257369f6591"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[让人不可撤销及撤回地向翼龙贷的注册用户发出债权转让的要约，债权受让人根据翼龙贷的提示操作受]]></text>
+				<text><![CDATA[让人不可撤销及撤回地向xxxx的注册用户发出债权转让的要约，债权受让人根据xxxx的提示操作受]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="8" y="274" width="540" height="22" uuid="88914014-2553-4894-9280-6a73c75b7c7b"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[让在翼龙贷网站上发布的债权，视为对债权受让的承诺，该承诺一经发出不得撤回与撤销；债权转让人]]></text>
+				<text><![CDATA[让在xxxx网站上发布的债权，视为对债权受让的承诺，该承诺一经发出不得撤回与撤销；债权转让人]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="8" y="295" width="540" height="22" uuid="d50b87ea-f5e0-4866-9cb6-c6a8dc33146c"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[接受翼龙贷网的相关产品交易规则而授权翼龙贷网进行债权转让系统撮合服务的，一经授权不得撤回与]]></text>
+				<text><![CDATA[接受xxxx网的相关产品交易规则而授权xxxx网进行债权转让系统撮合服务的，一经授权不得撤回与]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="8" y="316" width="540" height="22" uuid="708dcdb2-8b55-4559-b7da-a333b0b2c9a6"/>
@@ -370,14 +370,14 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[让人应立即向转让人支付转让价款，支付方式为：受让人授权并委托翼龙贷授权的第三方支付机构或银]]></text>
+				<text><![CDATA[让人应立即向转让人支付转让价款，支付方式为：受让人授权并委托xxxx授权的第三方支付机构或银]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="8" y="379" width="540" height="22" uuid="73a068b5-4384-4388-a741-585a9c98e1e2"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[行将债权转让的款项从受让人在翼龙贷开立的电子账户划至转让人在翼龙贷开立的电子账户，划转完成]]></text>
+				<text><![CDATA[行将债权转让的款项从受让人在xxxx开立的电子账户划至转让人在xxxx开立的电子账户，划转完成]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="8" y="400" width="540" height="22" uuid="9b6d44c4-07d6-4257-bced-af2ebf4e4ec4"/>
@@ -391,14 +391,14 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[1.5 转让人按照借款协议约定及翼龙贷公布的规则（协议约定与公布规则不一致的，以翼龙贷公示的最]]></text>
+				<text><![CDATA[1.5 转让人按照借款协议约定及xxxx公布的规则（协议约定与公布规则不一致的，以xxxx公示的最]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="8" y="442" width="540" height="22" uuid="df0d4ad8-6bb3-46ba-8ac6-b59744c1990b"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[最新收费规则为准）应向翼龙贷支付转让费的，并同意在受让人向转让人账户支付债权价款时，由翼龙]]></text>
+				<text><![CDATA[最新收费规则为准）应向xxxx支付转让费的，并同意在受让人向转让人账户支付债权价款时，由翼龙]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="8" y="463" width="540" height="22" uuid="6e173891-9f38-4576-bea1-2d7e469acbba"/>
@@ -440,7 +440,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[3.1  本协议由转让人和受让人通过翼龙贷在线点击确认的方式接受本协议后，本协议成立即生效。]]></text>
+				<text><![CDATA[3.1  本协议由转让人和受让人通过xxxx在线点击确认的方式接受本协议后，本协议成立即生效。]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="8" y="589" width="540" height="22" uuid="f052cf44-c382-415f-b144-e7abb138bca6"/>
@@ -454,7 +454,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[4.1 本协议未尽事宜，以翼龙贷公布的规则和条款为准。]]></text>
+				<text><![CDATA[4.1 本协议未尽事宜，以xxxx公布的规则和条款为准。]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="8" y="631" width="540" height="22" uuid="d7ec7923-0de6-42ef-ba1e-13f560bb19b2"/>

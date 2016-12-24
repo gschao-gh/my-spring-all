@@ -3,6 +3,7 @@ package com.spr.upload.protocol.service;
 import com.spr.upload.protocol.module.ExecuteResult;
 import com.spr.upload.protocol.reportutil.ClassUtils;
 import com.spr.upload.protocol.reportutil.MyResourceUtil;
+import com.spr.upload.protocol.reportutil.ReportUtils;
 import net.sf.jasperreports.engine.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -51,14 +52,14 @@ public class LendingProtocolService implements IProtocolTemplateService {
             paraMap.put("accountNum","15311437065");
             paraMap.put("partyAdate","2016年12月23日");
             paraMap.put("partyBdate","2016年12月23日");
-            paraMap.put("productType","3");
+            paraMap.put("productType","1");
             paraMap.put("loanAmount","100000.45");
             paraMap.put("loanRate","10%");
             paraMap.put("loanTimeLimit","365天");
             paraMap.put("earnType","转账");
 
             ArrayList<HashMap<String,String>> table01 = new ArrayList<>();
-            for (int i = 0; i <10 ; i++) {
+            for (int i = 0; i <30 ; i++) {
                 HashMap<String,String> tmp = new HashMap<>();
                 tmp.put("accountNo","134567889"+i);
                 tmp.put("lendingRealName","张"+i+"蓉");
@@ -91,15 +92,23 @@ public class LendingProtocolService implements IProtocolTemplateService {
                     e.printStackTrace();
                 }
             }
+//            try {
+//                in = new FileInputStream(MyResourceUtil.getFile("classpath:lending_services_agreement_stable3.jasper"));
+//                out = new FileOutputStream(destFile);
+//            } catch (FileNotFoundException e) {
+//                e.printStackTrace();
+//            }
             try {
-                in = new FileInputStream(MyResourceUtil.getFile("classpath:lending_services_agreement_stable3.jasper"));
-                out = new FileOutputStream(destFile);
+                String sourcePath = MyResourceUtil.getFile("classpath:lending_services_agreement_stable3.jasper").getPath();
+                ReportUtils.createPdfReport(sourcePath,destFileName,paraMap);
             } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            } catch (Exception e) {
                 e.printStackTrace();
             }
 
 
-            JasperRunManager.runReportToPdfStream(in,out,paraMap,new JREmptyDataSource());
+//            JasperRunManager.runReportToPdfStream(in,out,paraMap,new JREmptyDataSource());
 
 //            try {
 //               JasperPrint jasperPrint =  JasperFillManager.fillReport(jasperReport,paraMap);
