@@ -1,6 +1,6 @@
-package com.spr.upload.protocol.service;
+package com.spr.upload.ireport.service;
 
-import com.spr.upload.protocol.module.ExecuteResult;
+import com.spr.upload.ireport.module.ExecuteResult;
 
 /**
  * @author gschao

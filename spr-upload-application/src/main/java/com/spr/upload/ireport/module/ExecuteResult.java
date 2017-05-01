@@ -1,4 +1,4 @@
-package com.spr.upload.protocol.module;
+package com.spr.upload.ireport.module;
 
 /**
  * 执行结果存放

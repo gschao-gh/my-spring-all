@@ -1,4 +1,4 @@
-package com.spr.upload.protocol.action;
+package com.spr.upload.ireport.action;
 
 /**
  * 网络借贷服务协议（出借人）20161213协议Action

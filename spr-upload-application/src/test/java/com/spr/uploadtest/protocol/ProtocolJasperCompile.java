@@ -1,6 +1,6 @@
 package com.spr.uploadtest.protocol;
 
-import com.spr.upload.protocol.reportutil.ReportUtils;
+import com.spr.upload.ireport.reportutil.ReportUtils;
 
 /**
  * @author gschao

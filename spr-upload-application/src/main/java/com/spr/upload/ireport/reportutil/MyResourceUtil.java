@@ -1,4 +1,4 @@
-package com.spr.upload.protocol.reportutil;
+package com.spr.upload.ireport.reportutil;
 
 
 
