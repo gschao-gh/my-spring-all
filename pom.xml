@@ -8,6 +8,7 @@
   <modules>
     <module>spr-dtl-application</module>
     <module>spr-upload-application</module>
+      <module>spr-effectjava-examples</module>
   </modules>
 
 

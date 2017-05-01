@@ -1,4 +1,4 @@
-package com.spr.upload.photo.action;
+package com.spr.upload.photo;
 
 import com.spr.upload.base.BaseAction;
 import com.spr.upload.common.exception.UploadException;

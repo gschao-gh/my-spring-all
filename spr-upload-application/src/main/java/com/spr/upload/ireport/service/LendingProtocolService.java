@@ -1,9 +1,9 @@
-package com.spr.upload.protocol.service;
+package com.spr.upload.ireport.service;
 
-import com.spr.upload.protocol.module.ExecuteResult;
-import com.spr.upload.protocol.reportutil.ClassUtils;
-import com.spr.upload.protocol.reportutil.MyResourceUtil;
-import com.spr.upload.protocol.reportutil.ReportUtils;
+import com.spr.upload.ireport.module.ExecuteResult;
+import com.spr.upload.ireport.reportutil.ClassUtils;
+import com.spr.upload.ireport.reportutil.MyResourceUtil;
+import com.spr.upload.ireport.reportutil.ReportUtils;
 import net.sf.jasperreports.engine.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

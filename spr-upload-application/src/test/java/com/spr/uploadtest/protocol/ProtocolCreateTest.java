@@ -1,7 +1,7 @@
 package com.spr.uploadtest.protocol;
 
-import com.spr.upload.protocol.service.LendingProtocolService;
-import com.spr.upload.protocol.service.TransferProtocolService;
+import com.spr.upload.ireport.service.LendingProtocolService;
+import com.spr.upload.ireport.service.TransferProtocolService;
 
 /**
  * @author gschao
