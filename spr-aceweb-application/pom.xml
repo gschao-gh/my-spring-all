@@ -1,18 +1,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
-        <artifactId>my-spring-all</artifactId>
+        <artifactId>spr-effectjava-examples</artifactId>
         <groupId>com.spr.all</groupId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../spr-effectjava-examples/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>spr-effectjava-examples</artifactId>
-    <packaging>pom</packaging>
-    <name>spr-effectjava-examples Maven Webapp</name>
+    <artifactId>spr-aceweb-application</artifactId>
+    <packaging>war</packaging>
+    <name>spr-aceweb-application Maven Webapp</name>
     <url>http://maven.apache.org</url>
-    <modules>
-        <module>../spr-aceweb-application</module>
-    </modules>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -22,6 +20,6 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>spr-effectjava-examples</finalName>
+        <finalName>spr-aceweb-application</finalName>
     </build>
 </project>
