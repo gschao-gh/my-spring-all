@@ -6,43 +6,35 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>spr-web_application</artifactId>
+    <artifactId>spr-web-application</artifactId>
     <packaging>war</packaging>
-    <name>spr-web_application Maven Webapp</name>
+    <name>spr-web-application</name>
     <url>http://maven.apache.org</url>
 
-    <properties>
-        <spring.version>4.3.0.RELEASE</spring.version>
-    </properties>
+
     <dependencies>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>${spring.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-beans</artifactId>
-            <version>${spring.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>${spring.version}</version>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.1.1</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
 
         <dependency>
             <groupId>junit</groupId>
@@ -50,9 +42,10 @@
             <scope>test</scope>
         </dependency>
 
+
     </dependencies>
 
     <build>
-        <finalName>spr-web_application</finalName>
+        <finalName>spr-web-application</finalName>
     </build>
 </project>

@@ -5,6 +5,7 @@ package com.spr.upload.common.exception;
  * @date 2016/12/2 15:55.
  * @describe 上传异常码定义
  */
+
 public enum UploadException {
 
     AUTHOR_EXCEPTION("FS001","无权限上传"),

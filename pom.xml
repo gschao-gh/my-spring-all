@@ -10,6 +10,7 @@
     <module>spr-upload-application</module>
     <module>spr-effectjava-examples</module>
     <module>spr-web-application</module>
+    <module>spr-aceweb-application</module>
   </modules>
 
 
@@ -85,6 +86,12 @@
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-web</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-jdbc</artifactId>
         <version>${spring.version}</version>
       </dependency>
 

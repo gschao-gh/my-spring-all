@@ -7,18 +7,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>spr-effectjava-examples</artifactId>
-<<<<<<< HEAD
     <packaging>war</packaging>
-    <name>spr-effectjava-examples Maven Webapp</name>
+    <name>spr-effectjava-examples</name>
     <url>http://maven.apache.org</url>
-=======
-    <packaging>pom</packaging>
-    <name>spr-effectjava-examples Maven Webapp</name>
-    <url>http://maven.apache.org</url>
-    <modules>
-        <module>../spr-aceweb-application</module>
-    </modules>
->>>>>>> 62d4b40c80335d161f9fedd650e55ec2ab16d99a
+
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
