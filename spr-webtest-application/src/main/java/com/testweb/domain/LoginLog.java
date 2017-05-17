@@ -1,4 +1,4 @@
-package com.baa.domain;
+package com.testweb.domain;
 
 import java.io.Serializable;
 import java.util.Date;

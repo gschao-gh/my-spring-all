@@ -1,6 +1,7 @@
-package com.baa.dao;
+package com.testweb.dao;
 
-import com.baa.domain.User;
+
+import com.testweb.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowCallbackHandler;

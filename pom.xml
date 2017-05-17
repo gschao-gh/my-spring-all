@@ -9,8 +9,8 @@
     <module>spr-dtl-application</module>
     <module>spr-upload-application</module>
     <module>spr-effectjava-examples</module>
-    <module>spr-web-application</module>
     <module>spr-aceweb-application</module>
+    <module>spr-webtest-application</module>
   </modules>
 
 
@@ -21,7 +21,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.version>4.0</junit.version>
     <java.version>1.8</java.version>
-    <spring.version>4.0.0.RELEASE</spring.version>
+    <spring.version>4.3.8.RELEASE</spring.version>
   </properties>
 
   <dependencyManagement>

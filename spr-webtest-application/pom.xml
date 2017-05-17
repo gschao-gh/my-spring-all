@@ -6,12 +6,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>spr-web-application</artifactId>
+    <artifactId>spr-webtest-application</artifactId>
     <packaging>war</packaging>
-    <name>spr-web-application</name>
+    <name>spr-webtest-application Maven Webapp</name>
     <url>http://maven.apache.org</url>
-
-
     <dependencies>
 
         <dependency>
@@ -19,33 +17,29 @@
             <artifactId>spring-context</artifactId>
         </dependency>
 
-
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-beans</artifactId>
+            <artifactId>spring-jdbc</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
-            <version>1.1.1</version>
-        </dependency>
-
 
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
+            <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
-
-
     </dependencies>
-
     <build>
-        <finalName>spr-web-application</finalName>
+        <finalName>spr-webtest-application</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 </project>
