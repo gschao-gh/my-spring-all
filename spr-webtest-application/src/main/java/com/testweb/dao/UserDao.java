@@ -37,5 +37,10 @@ public class UserDao {
         return user;
     }
 
+    public void updateLoginInfo(User user){
+        String sqlStr = "UPDATE t_user set last_visit =? ,last_ip=? ,credis=? where user_id=?";
+        jdbcTemplate.update(sqlStr,new Object[]{user.getLastVisit(),user.getLastIp(),user.getCredits(),user.getUserId()});
+    }
+
 
 }
