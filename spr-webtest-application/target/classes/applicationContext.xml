@@ -10,8 +10,9 @@
         http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
         ">
+
     <!--扫描注释-->
-    <context:component-scan base-package="com.testweb"/>
+    <context:component-scan base-package="com.testweb.*"/>
 
     <!--定义一个DBCP的数据源-->
     <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource"
@@ -27,18 +28,23 @@
     <bean id="transactionManager"
         class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
         p:dataSource-ref="dataSource"></bean>
-    <!--<aop:config proxy-target-class="true">-->
-        <!--<aop:pointcut id="serviceMethod" expression="execution(* com.testweb.service..*(..))" />-->
-        <!--<aop:advisor advice-ref="txAdvice" pointcut-ref="serviceMethod"/>-->
-    <!--</aop:config>-->
-    <!---->
-    <!--<tx:advice id="txAdvice" transaction-manager="transactionManager">-->
-        <!--<tx:attributes>-->
-            <!--<tx:method name="*"/>-->
-        <!--</tx:attributes>-->
-    <!--</tx:advice>-->
 
+    <aop:config proxy-target-class="true">
+        <aop:pointcut id="serviceMethod" expression="execution(* com.testweb.service..*(..))" />
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="serviceMethod"/>
+    </aop:config>
 
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="*"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <bean
+            class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+            p:viewClass="org.springframework.web.servlet.view.JstlView"
+            p:prefix="/jsp/"
+            p:suffix=".jsp"/>
 
 
 </beans>
