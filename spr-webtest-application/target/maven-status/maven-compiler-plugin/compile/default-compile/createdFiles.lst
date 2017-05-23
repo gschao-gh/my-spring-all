@@ -1,8 +1,0 @@
-com\testweb\service\UserService.class
-com\testweb\domain\User.class
-com\testweb\dao\UserDao.class
-com\testweb\web\LoginCommand.class
-com\testweb\dao\UserDao$1.class
-com\testweb\dao\LoginLogDao.class
-com\testweb\web\LoginController.class
-com\testweb\domain\LoginLog.class
