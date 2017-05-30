@@ -42,5 +42,10 @@ public class UserDao {
         jdbcTemplate.update(sqlStr,new Object[]{user.getLastVisit(),user.getLastIp(),user.getCredits(),user.getUserId()});
     }
 
+    public int insertUser(User user){
+        String sqlStr = "insert into t_user (user_name,password,credits)values(?,?,?)";
+        return jdbcTemplate.update(sqlStr,new Object[]{user.getUserName(),user.getPassword(),user.getCredits()});
+    }
+
 
 }
